@@ -31,6 +31,11 @@
 			<?php echo h($customer['Customer']['email']); ?>
 			&nbsp;
 		</dd>
+		<dt><?php echo __('Ticket'); ?></dt>
+		<dd>
+			<?php echo $this->Html->link($customer['Ticket']['name'], array('controller' => 'tickets', 'action' => 'view', $customer['Ticket']['id'])); ?>
+			&nbsp;
+		</dd>
 		<dt><?php echo __('Answer'); ?></dt>
 		<dd>
 			<?php echo $this->Html->link($customer['Answer']['type'], array('controller' => 'answers', 'action' => 'view', $customer['Answer']['id'])); ?>
@@ -57,5 +62,7 @@
 		<li><?php echo $this->Html->link(__('New Customer'), array('controller' => 'customers', 'action' => 'add')); ?></li>
 		<li><?php echo $this->Html->link(__('List Affiliations'), array('controller' => 'affiliations', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Affiliation'), array('controller' => 'affiliations', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Tickets'), array('controller' => 'tickets', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Ticket'), array('controller' => 'tickets', 'action' => 'add')); ?></li>
 	</ul>
 </div>

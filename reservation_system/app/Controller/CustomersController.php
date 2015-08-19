@@ -59,7 +59,8 @@ class CustomersController extends AppController {
 		$affiliations = $this->Customer->Affiliation->find('list');
 		$primaries = $this->Customer->Primary->find('list');
 		$answers = $this->Customer->Answer->find('list');
-		$this->set(compact('affiliations', 'primaries', 'answers'));
+		$tickets = $this->Customer->Ticket->find('list');
+		$this->set(compact('affiliations', 'primaries', 'tickets' ,  'answers'));
 	}
 
 /**
@@ -87,7 +88,8 @@ class CustomersController extends AppController {
 		$affiliations = $this->Customer->Affiliation->find('list');
 		$primaries = $this->Customer->Primary->find('list');
 		$answers = $this->Customer->Answer->find('list');
-		$this->set(compact('affiliations', 'primaries', 'answers'));
+		$tickets = $this->Customer->Ticket->find('list');
+		$this->set(compact('affiliations', 'primaries', 'tickets' , 'answers'));
 	}
 
 /**

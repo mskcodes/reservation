@@ -90,6 +90,13 @@ class Customer extends AppModel {
 			'fields' => '',
 			'order' => ''
 		),
+		'Ticket' => array(
+			'className' => 'Ticket',
+			'foreignKey' => 'ticket_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
 		'Answer' => array(
 			'className' => 'Answer',
 			'foreignKey' => 'answer_id',
