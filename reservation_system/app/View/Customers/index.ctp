@@ -44,9 +44,21 @@
 		</td>
 	</tr>
 <?php endforeach; ?>
-		<?php echo __('Join Total'); ?>
-		<?php echo __('UnJoin Total'); ?>
-		<?php echo __('Un Total'); ?>
+		<?php
+			echo __('Join Total');
+			echo __(count($serch_answer));
+			echo __('UnJoin Total'); 
+			echo __('Un Total');
+			echo $this->Form->input(__('serch_tickets'), array(
+					'type' => 'select', 
+					'tOptions' => $select
+					//'selected' => $selected  // 規定値をvalueで指定
+					//'div' => false           // div親要素の有無(true/false)
+					//'size' => 5              // 高さ設定(リストボックスとして表示)
+					//'empty' => true          // 空白を許可
+				//$this->Form->end(__('Submit'));
+));
+		?>
 	</tbody>
 	</table>
 	<p>

@@ -1,5 +1,5 @@
 <?php
-App::uses('AppController', 'Controller');
+App::uses('TicketsController' , 'AppController', 'Controller');
 /**
  * Customers Controller
  *
@@ -24,6 +24,17 @@ class CustomersController extends AppController {
 	public function index() {
 		$this->Customer->recursive = 0;
 		$this->set('customers', $this->Paginator->paginate());
+		$options = array();
+		$options = array('conditions' => array('Customer.answer_id' => 2)); 
+		$res = $this->Customer->find('all', $options);
+		$this->set('serch_answer' , $res);
+		
+		$tickets = $this->Customer->Ticket->find('list');
+		$tOptions = array();
+		$id = null;
+		$this->set('seleced' , $id);
+		$tOptions = array('conditions' => array ('Customer.ticket_id' => $id));
+		$this->set('select', $this->Ticket->find('list'));
 	}
 
 /**
@@ -61,6 +72,13 @@ class CustomersController extends AppController {
 		$answers = $this->Customer->Answer->find('list');
 		$tickets = $this->Customer->Ticket->find('list');
 		$this->set(compact('affiliations', 'primaries', 'tickets' ,  'answers'));
+
+		$this->Customer->recursive = 0;
+		$this->set('customers', $this->Paginator->paginate());
+		$options = array();
+		$options = array('conditions' => array('Customer.answer_id' => 2)); 
+		$res = $this->Customer->find('all', $options);
+		$this->set('serch_answer' , $res);
 	}
 
 /**
@@ -90,6 +108,13 @@ class CustomersController extends AppController {
 		$answers = $this->Customer->Answer->find('list');
 		$tickets = $this->Customer->Ticket->find('list');
 		$this->set(compact('affiliations', 'primaries', 'tickets' , 'answers'));
+
+		$this->Customer->recursive = 0;
+		$this->set('customers', $this->Paginator->paginate());
+		$options = array();
+		$options = array('conditions' => array('Customer.answer_id' => 2)); 
+		$res = $this->Customer->find('all', $options);
+		$this->set('serch_answer' , $res);
 	}
 
 /**

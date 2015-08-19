@@ -726,4 +726,57 @@ msgstr "不参加"
 msgid "Un Total"
 msgstr "未定"
 
+#: C:/xampp/htdocs/reservation/reservation_system/app/Controller/TicketsController.php:38;70;95
+msgid "Invalid ticket"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation/reservation_system/app/Controller/TicketsController.php:53;74
+msgid "The ticket has been saved."
+msgstr "チケットデータがありません。"
+
+#: C:/xampp/htdocs/reservation/reservation_system/app/Controller/TicketsController.php:56;77
+msgid "The ticket could not be saved. Please, try again."
+msgstr "保存できませんでした。もう一度やり直してください。"
+
+#: C:/xampp/htdocs/reservation/reservation_system/app/Controller/TicketsController.php:99
+msgid "The ticket has been deleted."
+msgstr "削除されました。"
+
+#: C:/xampp/htdocs/reservation/reservation_system/app/Controller/TicketsController.php:101
+msgid "The ticket could not be deleted. Please, try again."
+msgstr "削除できませんでした。もう一度やり直してください。"
+
+msgid "List Tickets"
+msgstr "チケットリスト"
+
+msgid "New Ticket"
+msgstr "チケット作成"
+
+msgid "Ticket"
+msgstr "チケット詳細"
+
+msgid "Add Ticket"
+msgstr "チケット作成"
+
+msgid "Edit Ticket"
+msgstr "チケット編集"
+
+msgid "Tickets"
+msgstr "チケットリスト"
+
+msgid "Delete Ticket"
+msgstr "チケット削除"
+
+msgid "Ticket Id"
+msgstr "チケットID"
+
+msgid "Name"
+msgstr "名前"
+
+msgid "Stock"
+msgstr "在庫"
+
+msgid "Issue"
+msgstr "発行数"
+
 

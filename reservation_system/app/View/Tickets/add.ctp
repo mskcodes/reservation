@@ -6,6 +6,7 @@
 		echo $this->Form->input('name');
 		echo $this->Form->input('stock');
 		echo $this->Form->input('issue');
+
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
