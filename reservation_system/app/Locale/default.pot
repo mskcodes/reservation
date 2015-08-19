@@ -1,0 +1,546 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/AffiliationsController.php:38;70;95
+msgid "Invalid affiliation"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/AffiliationsController.php:53;74
+msgid "The affiliation has been saved."
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/AffiliationsController.php:56;77
+msgid "The affiliation could not be saved. Please, try again."
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/AffiliationsController.php:99
+msgid "The affiliation has been deleted."
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/AffiliationsController.php:101
+msgid "The affiliation could not be deleted. Please, try again."
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/AnswersController.php:38;70;95
+msgid "Invalid answer"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/AnswersController.php:53;74
+msgid "The answer has been saved."
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/AnswersController.php:56;77
+msgid "The answer could not be saved. Please, try again."
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/AnswersController.php:99
+msgid "The answer has been deleted."
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/AnswersController.php:101
+msgid "The answer could not be deleted. Please, try again."
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/CustomersController.php:38;74;103
+msgid "Invalid customer"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/CustomersController.php:53;78
+msgid "The customer has been saved."
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/CustomersController.php:56;81
+msgid "The customer could not be saved. Please, try again."
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/CustomersController.php:107
+msgid "The customer has been deleted."
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/CustomersController.php:109
+msgid "The customer could not be deleted. Please, try again."
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/PrimariesController.php:38;70;95
+msgid "Invalid primary"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/PrimariesController.php:53;74
+msgid "The primary has been saved."
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/PrimariesController.php:56;77
+msgid "The primary could not be saved. Please, try again."
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/PrimariesController.php:99
+msgid "The primary has been deleted."
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/PrimariesController.php:101
+msgid "The primary could not be deleted. Please, try again."
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/add.ctp:4
+msgid "Add Affiliation"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/add.ctp:11
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/edit.ctp:12
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/add.ctp:9
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/edit.ctp:10
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/add.ctp:14
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/edit.ctp:15
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/add.ctp:9
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/edit.ctp:10
+msgid "Submit"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/add.ctp:14
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/edit.ctp:15
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/index.ctp:8;42
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:17;45
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/add.ctp:12
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/edit.ctp:13
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/index.ctp:8;40
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:17;45
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/add.ctp:17
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/edit.ctp:18
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/index.ctp:15;60
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:52
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/add.ctp:12
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/edit.ctp:13
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/index.ctp:8;40
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:17;45
+msgid "Actions"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/add.ctp:17
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/edit.ctp:19
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/index.ctp:44
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:21
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/add.ctp:15
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/edit.ctp:17
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/index.ctp:42
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:21
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/add.ctp:20
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/edit.ctp:22
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/index.ctp:62
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:56
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:2
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/add.ctp:15
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/edit.ctp:17
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/index.ctp:42
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:21
+msgid "List Customers"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/add.ctp:18
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/edit.ctp:20
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/index.ctp:45
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:22;70
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/add.ctp:16
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/edit.ctp:18
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/index.ctp:43
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:22;70
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/add.ctp:21
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/edit.ctp:23
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/index.ctp:63
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:57
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:3
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/add.ctp:16
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/edit.ctp:18
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/index.ctp:43
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:22;70
+msgid "New Customer"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/add.ctp:19
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/edit.ctp:21
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/index.ctp:46
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:23
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/add.ctp:17
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/edit.ctp:19
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/index.ctp:44
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:23
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/add.ctp:22
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/edit.ctp:24
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/index.ctp:64
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:58
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:4
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/add.ctp:17
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/edit.ctp:19
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/index.ctp:44
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:23
+msgid "List Affiliations"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/add.ctp:20
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/edit.ctp:22
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/index.ctp:47
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:24
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/add.ctp:18
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/edit.ctp:20
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/index.ctp:45
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:24
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/add.ctp:23
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/edit.ctp:25
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/index.ctp:65
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:59
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:5
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/add.ctp:18
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/edit.ctp:20
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/index.ctp:45
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:24
+msgid "New Affiliation"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/add.ctp:21
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/edit.ctp:23
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/index.ctp:48
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:25
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/add.ctp:19
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/edit.ctp:21
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/index.ctp:46
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:25
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/add.ctp:24
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/edit.ctp:26
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/index.ctp:66
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:60
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:6
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/add.ctp:19
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/edit.ctp:21
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/index.ctp:46
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:25
+msgid "List Primaries"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/add.ctp:22
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/edit.ctp:24
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/index.ctp:49
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:26
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/add.ctp:20
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/edit.ctp:22
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/index.ctp:47
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:26
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/add.ctp:25
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/edit.ctp:27
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/index.ctp:67
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:61
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:7
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/add.ctp:20
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/edit.ctp:22
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/index.ctp:47
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:26
+msgid "New Primary"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/add.ctp:23
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/edit.ctp:25
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/index.ctp:50
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:27
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/add.ctp:21
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/edit.ctp:23
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/index.ctp:48
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:27
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/add.ctp:26
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/edit.ctp:28
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/index.ctp:68
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:62
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:8
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/add.ctp:21
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/edit.ctp:23
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/index.ctp:48
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:27
+msgid "List Answers"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/add.ctp:24
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/edit.ctp:26
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/index.ctp:51
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:28
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/add.ctp:22
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/edit.ctp:24
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/index.ctp:49
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:28
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/add.ctp:27
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/edit.ctp:29
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/index.ctp:69
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:63
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:9
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/add.ctp:22
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/edit.ctp:24
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/index.ctp:49
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:28
+msgid "New Answer"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/edit.ctp:4
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:19
+msgid "Edit Affiliation"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/edit.ctp:18
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/index.ctp:21
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:61
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/edit.ctp:16
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/index.ctp:19
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:61
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/edit.ctp:21
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/index.ctp:39
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/edit.ctp:16
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/index.ctp:19
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:61
+msgid "Delete"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/edit.ctp:18
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/index.ctp:21
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:20;61
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/edit.ctp:16
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/index.ctp:19
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:20;61
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/edit.ctp:21
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/index.ctp:39
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:55
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/edit.ctp:16
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/index.ctp:19
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:20;61
+msgid "Are you sure you want to delete # %s?"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/index.ctp:2
+msgid "Affiliations"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/index.ctp:19
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:59
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/index.ctp:17
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:59
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/index.ctp:37
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/index.ctp:17
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:59
+msgid "View"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/index.ctp:20
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:60
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/index.ctp:18
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:60
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/index.ctp:38
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/index.ctp:18
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:60
+msgid "Edit"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/index.ctp:30
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/index.ctp:28
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/index.ctp:48
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/index.ctp:28
+msgid "Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/index.ctp:35
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/index.ctp:33
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/index.ctp:53
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/index.ctp:33
+msgid "previous"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/index.ctp:37
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/index.ctp:35
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/index.ctp:55
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/index.ctp:35
+msgid "next"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:2
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:9
+msgid "Affiliation"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:4;36
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:4;36
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:4
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:4;36
+msgid "Id"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:9
+msgid "Affiliation Type"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:20
+msgid "Delete Affiliation"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:32
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:32
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:32
+msgid "Related Customers"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:37
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:37
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:37
+msgid "Affiliation Id"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:38
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:38
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:38
+msgid "Primary Id"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:39
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:39
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:19
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:39
+msgid "Customer Name"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:40
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:40
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:24
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:40
+msgid "Tel"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:41
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:41
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:29
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:41
+msgid "Email"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:42
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:42
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:42
+msgid "Answer Id"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:43
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:43
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:39
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:43
+msgid "Created"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:44
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:44
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:44
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:44
+msgid "Modified"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/add.ctp:4
+msgid "Add Answer"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/edit.ctp:4
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:19
+msgid "Edit Answer"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/index.ctp:2
+msgid "Answers"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:2
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:34
+msgid "Answer"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:9
+msgid "Type"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:20
+msgid "Delete Answer"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/add.ctp:4
+msgid "Add Customer"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/edit.ctp:4
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:54
+msgid "Edit Customer"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/index.ctp:2
+msgid "Customers"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:2
+msgid "Customer"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:14
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:2
+msgid "Primary"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:55
+msgid "Delete Customer"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/add.ctp:4
+msgid "Add Primary"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/edit.ctp:4
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:19
+msgid "Edit Primary"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/index.ctp:2
+msgid "Primaries"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:9
+msgid "Primary Type"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:20
+msgid "Delete Primary"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Errors/error400.ctp:19
+#: C:/xampp/htdocs/reservation_system/app/View/Errors/error500.ctp:19
+msgid "Error"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Errors/error400.ctp:21
+msgid "The requested address %s was not found on this server."
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Errors/error500.ctp:20
+msgid "An Internal Error Has Occurred."
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Layouts/default.ctp:17
+#: C:/xampp/htdocs/reservation_system/app/View/Layouts/error.ctp:17
+msgid "CakePHP: the rapid development php framework"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Layouts/default.ctp:18
+msgid "CakePHP %s"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/webroot/test.php:103
+msgid "Debug setting does not allow access to this url."
+msgstr ""
+
