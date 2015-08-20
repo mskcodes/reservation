@@ -1,5 +1,5 @@
 <?php
-App::uses('TicketsController' , 'AppController', 'Controller');
+App::uses('AppController', 'Controller');
 /**
  * Customers Controller
  *
@@ -15,26 +15,41 @@ class CustomersController extends AppController {
  * @var array
  */
 	public $components = array('Paginator', 'Session');
+	//public $uses = array('Ticket' , 'Customer');
 
 /**
  * index method
  *
  * @return void
  */
-	public function index() {
+	public function index($id = null) {
 		$this->Customer->recursive = 0;
-		$this->set('customers', $this->Paginator->paginate());
-		$options = array();
-		$options = array('conditions' => array('Customer.answer_id' => 2)); 
-		$res = $this->Customer->find('all', $options);
-		$this->set('serch_answer' , $res);
+		if($id == null){
+			$this->set('customers', $this->Paginator->paginate());
+			$options = array();
+			$options = array('conditions' => array('Customer.answer_id' => 2)); 
+			$res = $this->Customer->find('all', $options);
+			$this->set('serch_answer' , $res);
+		}
 		
-		$tickets = $this->Customer->Ticket->find('list');
+		//$this->set('allObject' , $this->Ticket->find('Ticket'));
+		//凍結$customers =  $this->Customer->Ticket->find('list');
 		$tOptions = array();
-		$id = null;
-		$this->set('seleced' , $id);
+		//$id = null;
+		$this->set('id' , array('Ticket' => $id));
 		$tOptions = array('conditions' => array ('Customer.ticket_id' => $id));
-		$this->set('select', $this->Ticket->find('list'));
+		$this->set('tOptions' , array('conditions' => array ('Customer.ticket_id' => $id)));
+		//凍結$this->set('allSelect' , $this->Customer->Ticket->find('all'));
+		$this->set('select', $this->Customer->Ticket->find('list'));
+		
+		if($id != null){
+			$this->set('customers', $this->Paginator->paginate());
+			$options = array();
+			$options = array('conditions' => array('Customer.answer_id' => 2 , 'Customer.ticket_id' => 2)); 
+			$res = $this->Customer->find('all', $options);
+			$this->set('serch_answer' , $res);
+
+		}
 	}
 
 /**

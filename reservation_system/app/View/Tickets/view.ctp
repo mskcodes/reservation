@@ -82,7 +82,6 @@
 	<?php endforeach; ?>
 	</table>
 <?php endif; ?>
-
 	<div class="actions">
 		<ul>
 			<li><?php echo $this->Html->link(__('New Customer'), array('controller' => 'customers', 'action' => 'add')); ?> </li>

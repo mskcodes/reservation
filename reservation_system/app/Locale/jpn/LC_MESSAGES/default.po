@@ -779,4 +779,10 @@ msgstr "在庫"
 msgid "Issue"
 msgstr "発行数"
 
+msgid "serch_tickets"
+msgstr "チケット別集計"
+
+msgid ""
+msgstr ""
+
 

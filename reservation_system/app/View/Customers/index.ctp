@@ -1,3 +1,4 @@
+
 <div class="customers index">
 	<h2><?php echo __('Customers'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
@@ -45,19 +46,33 @@
 	</tr>
 <?php endforeach; ?>
 		<?php
+			/*
 			echo __('Join Total');
 			echo __(count($serch_answer));
 			echo __('UnJoin Total'); 
 			echo __('Un Total');
+			*/
+			?>
+		<?php echo $this->Form->create('Customer' , 'type' => GET 'action' => ''); ?>
+		<?php
 			echo $this->Form->input(__('serch_tickets'), array(
 					'type' => 'select', 
-					'tOptions' => $select
-					//'selected' => $selected  // 規定値をvalueで指定
-					//'div' => false           // div親要素の有無(true/false)
-					//'size' => 5              // 高さ設定(リストボックスとして表示)
-					//'empty' => true          // 空白を許可
-				//$this->Form->end(__('Submit'));
-));
+					'action' => '' ,
+					'options' => $select,
+					'value' => key($select)
+				));
+					//var_dump($id);
+					//var_dump($allObject);
+					//var_dump($allSelect);
+					//var_dump($select);
+					//var_dump($customers);
+			//echo $this->Html->link(__('Submit') , array('action' => '' , key($select)));
+			//echo $this->Form->end(__('Submit') , array('action' => '' , key($select)));
+			//echo $this->Form->end(__('Submit') , 'value');
+			echo $this->Form->end(__('Submit'));
+			//echo $this->Form->end();
+			//echo $this->Html->link(__('Submit') , array('action' => '' , key($select)));
+			//echo $this->Form->end(__('Submit') , array($this->Html->link(array('action' => '' , $key($select)))));
 		?>
 	</tbody>
 	</table>

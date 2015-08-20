@@ -38,6 +38,7 @@ class TicketsController extends AppController {
 			throw new NotFoundException(__('Invalid ticket'));
 		}
 		$options = array('conditions' => array('Ticket.' . $this->Ticket->primaryKey => $id));
+		$this->set('options' , array('conditions' => array('Ticket.' . $this->Ticket->primaryKey => $id)));
 		$this->set('ticket', $this->Ticket->find('first', $options));
 	}
 
