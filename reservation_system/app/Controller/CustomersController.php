@@ -1,5 +1,5 @@
 <?php
-App::uses('AppController', 'Controller');
+App::uses('TicketsController' , 'AppController', 'Controller');
 /**
  * Customers Controller
  *
@@ -22,34 +22,64 @@ class CustomersController extends AppController {
  *
  * @return void
  */
-	public function index($id = null) {
+	public function index() {
 		$this->Customer->recursive = 0;
+		
+		//プルダウンのリスト
+		$selectKey = array(0 => '全体');
+		$selectKey += $this->Customer->Ticket->find('list');
+		$this->set('select', $selectKey);
+		
+		if ($this->request->is('post')) {
+			$this->Customer->create();
+			if ($this->Customer->save($this->request->data)) {
+				$this->Session->setFlash(__('Success.'));
+				$id = (int)$this->data['serch_tickets'][__('serch_tickets')];
+				$this->set('id' , $id);
+				//return $this->redirect(array('action' => '' . $id));
+			}
+		}
+
+		$this->set('total' , $this->Customer->find('all'));
 		if($id == null){
 			$this->set('customers', $this->Paginator->paginate());
-			$options = array();
-			$options = array('conditions' => array('Customer.answer_id' => 2)); 
-			$res = $this->Customer->find('all', $options);
-			$this->set('serch_answer' , $res);
+			
+			$options1 = array('conditions' => array('Customer.answer_id' => 1)); 
+			$res = $this->Customer->find('all', $options1);
+			$this->set('serch_answer1' , $res);
+			
+			$options2 = array('conditions' => array('Customer.answer_id' => 2)); 
+			$res = $this->Customer->find('all', $options2);
+			$this->set('serch_answer2' , $res);
+			
+			$options3 = array('conditions' => array('Customer.answer_id' => 3)); 
+			$res = $this->Customer->find('all', $options3);
+			$this->set('serch_answer3' , $res);
 		}
-		
-		//$this->set('allObject' , $this->Ticket->find('Ticket'));
-		//凍結$customers =  $this->Customer->Ticket->find('list');
-		$tOptions = array();
-		//$id = null;
+		if($id != null){
+			$this->set('customers', $this->Paginator->paginate());
+			$selecter = array('Customer.ticket_id' => $id);
+			
+			$options1 = array('conditions' => array('Customer.answer_id' => 1)); 
+			$res = $this->Customer->find('all', $options1);
+			$serch_answer = $this->Customer->find('all' , $selecter);
+			$this->set('serch_answer1' , $serch_answer);
+			
+			$options2 = array('conditions' => array('Customer.answer_id' => 2)); 
+			$res = $this->Customer->find('all', $options2);
+			$this->set('serch_answer2' , $res);
+			
+			$options3 = array('conditions' => array('Customer.answer_id' => 3)); 
+			$res = $this->Customer->find('all', $options3);
+			$this->set('serch_answer3' , $res);
+
+		}
+		/*謎。いらないっぽい
 		$this->set('id' , array('Ticket' => $id));
 		$tOptions = array('conditions' => array ('Customer.ticket_id' => $id));
 		$this->set('tOptions' , array('conditions' => array ('Customer.ticket_id' => $id)));
-		//凍結$this->set('allSelect' , $this->Customer->Ticket->find('all'));
-		$this->set('select', $this->Customer->Ticket->find('list'));
+		*/
 		
-		if($id != null){
-			$this->set('customers', $this->Paginator->paginate());
-			$options = array();
-			$options = array('conditions' => array('Customer.answer_id' => 2 , 'Customer.ticket_id' => 2)); 
-			$res = $this->Customer->find('all', $options);
-			$this->set('serch_answer' , $res);
-
-		}
 	}
 
 /**
@@ -118,6 +148,7 @@ class CustomersController extends AppController {
 			$options = array('conditions' => array('Customer.' . $this->Customer->primaryKey => $id));
 			$this->request->data = $this->Customer->find('first', $options);
 		}
+		
 		$affiliations = $this->Customer->Affiliation->find('list');
 		$primaries = $this->Customer->Primary->find('list');
 		$answers = $this->Customer->Answer->find('list');

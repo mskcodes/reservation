@@ -11,9 +11,11 @@
 		echo $this->Form->input('email');
 		echo $this->Form->input('ticket_id');
 		echo $this->Form->input('answer_id');
-		echo $this->Form->input('issue' , array('value' => count($serch_answer)));
 	?>
 	</fieldset>
+<?php echo $this->Form->create('Ticket');
+	//echo $this->Form->input('issue' , array('value' => count($serch_answer)));
+?>
 <?php echo $this->Form->end(__('Submit')); ?>
 </div>
 <div class="actions">

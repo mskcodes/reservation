@@ -40,12 +40,8 @@ class Ticket extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-	);
-	
-	private $val = array(	
-		'issue' => array(
+		'ticket_comment_count' => array(
 			'numeric' => array(
-				
 				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
@@ -75,7 +71,7 @@ class Ticket extends AppModel {
 			'offset' => '',
 			'exclusive' => '',
 			'finderQuery' => '',
-			'counterQuery' => ''
+			'counterQuery' => '',
 		)
 	);
 

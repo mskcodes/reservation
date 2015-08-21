@@ -45,35 +45,28 @@
 		</td>
 	</tr>
 <?php endforeach; ?>
-		<?php
-			/*
-			echo __('Join Total');
-			echo __(count($serch_answer));
-			echo __('UnJoin Total'); 
-			echo __('Un Total');
-			*/
-			?>
-		<?php echo $this->Form->create('Customer' , 'type' => GET 'action' => ''); ?>
+		<?php echo $this->Form->create('serch_tickets'); ?>
 		<?php
 			echo $this->Form->input(__('serch_tickets'), array(
+					'action' => '',
 					'type' => 'select', 
-					'action' => '' ,
 					'options' => $select,
-					'value' => key($select)
 				));
-					//var_dump($id);
-					//var_dump($allObject);
-					//var_dump($allSelect);
-					//var_dump($select);
-					//var_dump($customers);
-			//echo $this->Html->link(__('Submit') , array('action' => '' , key($select)));
-			//echo $this->Form->end(__('Submit') , array('action' => '' , key($select)));
-			//echo $this->Form->end(__('Submit') , 'value');
+				var_dump($select);
+				var_dump($id);
 			echo $this->Form->end(__('Submit'));
-			//echo $this->Form->end();
-			//echo $this->Html->link(__('Submit') , array('action' => '' , key($select)));
-			//echo $this->Form->end(__('Submit') , array($this->Html->link(array('action' => '' , $key($select)))));
 		?>
+	<dl>
+		<dt><?php echo __('Join Total'); ?></dt>
+		<dd><?php echo __(count($serch_answer2)); ?></dd>
+		<dt><?php echo __('UnJoin Total'); ?></dt>
+		<dd><?php echo __(count($serch_answer1)); ?></dd>
+		<dt><?php echo __('Un Total'); ?></dt>
+		<dd><?php echo __(count($serch_answer3)); ?></dd>
+		<dt><?php echo __('Total'); ?></dt>
+		<dd><?php echo __(count($serch_answer)); ?></dd>
+	</dl>
+
 	</tbody>
 	</table>
 	<p>

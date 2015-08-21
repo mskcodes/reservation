@@ -18,7 +18,7 @@
 		</dd>
 		<dt><?php echo __('Issue'); ?></dt>
 		<dd>
-			<?php echo h($ticket['Ticket']['issue']); ?>
+			<?php echo h($ticket['Ticket']['customer_count']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Created'); ?></dt>
