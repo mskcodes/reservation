@@ -12,7 +12,7 @@ class Answer extends AppModel {
  *
  * @var string
  */
-	public $displayField = 'type';
+	public $displayField = 'name';
 
 /**
  * Validation rules

@@ -22,19 +22,19 @@
 	<tr>
 		<td><?php echo h($customer['Customer']['id']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($customer['Affiliation']['affiliation_type'], array('controller' => 'affiliations', 'action' => 'view', $customer['Affiliation']['id'])); ?>
+			<?php echo $this->Html->link($customer['Affiliation']['name'], array('controller' => 'affiliations', 'action' => 'view', $customer['Affiliation']['id'])); ?>
 		</td>
 		<td>
-			<?php echo $this->Html->link($customer['Primary']['primary_type'], array('controller' => 'primaries', 'action' => 'view', $customer['Primary']['id'])); ?>
+			<?php echo $this->Html->link($customer['Primary']['name'], array('controller' => 'primaries', 'action' => 'view', $customer['Primary']['id'])); ?>
 		</td>
 		<td><?php echo h($customer['Customer']['customer_name']); ?>&nbsp;</td>
 		<td><?php echo h($customer['Customer']['tel']); ?>&nbsp;</td>
 		<td><?php echo h($customer['Customer']['email']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($customer['Ticket']['name'], array('controller' => 'answers', 'action' => 'view', $customer['Answer']['id'])); ?>
+			<?php echo $this->Html->link($customer['Ticket']['name'], array('controller' => 'customers', 'action' => 'ticket_view', $customer['Ticket']['id'])); ?>
 		</td>
 		<td>
-			<?php echo $this->Html->link($customer['Answer']['type'], array('controller' => 'answers', 'action' => 'view', $customer['Answer']['id'])); ?>
+			<?php echo $this->Html->link($customer['Answer']['name'], array('controller' => 'answers', 'action' => 'view', $customer['Answer']['id'])); ?>
 		</td>
 		<td><?php echo h($customer['Customer']['created']); ?>&nbsp;</td>
 		<td><?php echo h($customer['Customer']['modified']); ?>&nbsp;</td>
@@ -52,19 +52,17 @@
 					'type' => 'select', 
 					'options' => $select,
 				));
-				var_dump($select);
-				var_dump($id);
 			echo $this->Form->end(__('Submit'));
 		?>
 	<dl>
 		<dt><?php echo __('Join Total'); ?></dt>
-		<dd><?php echo __(count($serch_answer2)); ?></dd>
+		<dd><?php echo $serch_answer2; ?></dd>
 		<dt><?php echo __('UnJoin Total'); ?></dt>
-		<dd><?php echo __(count($serch_answer1)); ?></dd>
+		<dd><?php echo $serch_answer3; ?></dd>
 		<dt><?php echo __('Un Total'); ?></dt>
-		<dd><?php echo __(count($serch_answer3)); ?></dd>
+		<dd><?php echo $serch_answer1; ?></dd>
 		<dt><?php echo __('Total'); ?></dt>
-		<dd><?php echo __(count($serch_answer)); ?></dd>
+		<dd><?php echo $serch_total; ?></dd>
 	</dl>
 
 	</tbody>

@@ -106,7 +106,7 @@ class Customer extends AppModel {
 			'conditions' => '',
 			'fields' => '',
 			'order' => '',
-			'counterCache' => true,
+			'counterCache' => 'customer_count',
             'counterScope' => array('answer_id' => 2)
 		),
 		'Answer' => array(

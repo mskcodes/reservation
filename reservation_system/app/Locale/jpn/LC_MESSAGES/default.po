@@ -782,6 +782,9 @@ msgstr "発行数"
 msgid "serch_tickets"
 msgstr "チケット別集計"
 
+msgid "Total"
+msgstr "合計"
+
 msgid ""
 msgstr ""
 

@@ -3,7 +3,7 @@
 	<fieldset>
 		<legend><?php echo __('Add Affiliation'); ?></legend>
 	<?php
-		echo $this->Form->input('affiliation_type');
+		echo $this->Form->input('name');
 		echo $this->Form->input('tel');
 		echo $this->Form->input('email');
 	?>

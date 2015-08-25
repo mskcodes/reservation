@@ -8,12 +8,12 @@
 		</dd>
 		<dt><?php echo __('Affiliation'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($customer['Affiliation']['affiliation_type'], array('controller' => 'affiliations', 'action' => 'view', $customer['Affiliation']['id'])); ?>
+			<?php echo $this->Html->link($customer['Affiliation']['name'], array('controller' => 'affiliations', 'action' => 'view', $customer['Affiliation']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Primary'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($customer['Primary']['primary_type'], array('controller' => 'primaries', 'action' => 'view', $customer['Primary']['id'])); ?>
+			<?php echo $this->Html->link($customer['Primary']['name'], array('controller' => 'primaries', 'action' => 'view', $customer['Primary']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Customer Name'); ?></dt>
@@ -38,7 +38,7 @@
 		</dd>
 		<dt><?php echo __('Answer'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($customer['Answer']['type'], array('controller' => 'answers', 'action' => 'view', $customer['Answer']['id'])); ?>
+			<?php echo $this->Html->link($customer['Answer']['name'], array('controller' => 'answers', 'action' => 'view', $customer['Answer']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Created'); ?></dt>

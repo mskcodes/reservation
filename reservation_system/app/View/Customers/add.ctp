@@ -12,7 +12,7 @@
 		echo $this->Form->input('answer_id');
 	?>
 <?php echo $this->Form->create('Ticket');
-	//echo $this->Form->input('issue' , array('value' => count($serch_answer)));
+	echo $this->Form->input('issue' , array('value' => count($serch_answer)));
 ?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>

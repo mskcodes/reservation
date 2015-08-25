@@ -4,7 +4,7 @@
 	<thead>
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
-			<th><?php echo $this->Paginator->sort('affiliation_type'); ?></th>
+			<th><?php echo $this->Paginator->sort('name'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	</thead>
@@ -12,7 +12,7 @@
 	<?php foreach ($affiliations as $affiliation): ?>
 	<tr>
 		<td><?php echo h($affiliation['Affiliation']['id']); ?>&nbsp;</td>
-		<td><?php echo h($affiliation['Affiliation']['affiliation_type']); ?>&nbsp;</td>
+		<td><?php echo h($affiliation['Affiliation']['name']); ?>&nbsp;</td>
 		<td><?php echo h($affiliation['Affiliation']['tel']); ?>&nbsp;</td>
 		<td><?php echo h($affiliation['Affiliation']['email']); ?>&nbsp;</td>
 		<td class="actions">

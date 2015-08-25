@@ -8,7 +8,7 @@
 		</dd>
 		<dt><?php echo __('Type'); ?></dt>
 		<dd>
-			<?php echo h($answer['Answer']['type']); ?>
+			<?php echo h($answer['Answer']['name']); ?>
 			&nbsp;
 		</dd>
 	</dl>

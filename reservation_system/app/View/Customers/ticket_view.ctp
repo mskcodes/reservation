@@ -3,32 +3,32 @@
 	<dl>
 		<dt><?php echo __('Id'); ?></dt>
 		<dd>
-			<?php echo h($ticket['Ticket']['id']); ?>
+			<?php echo h($customer['Ticket']['id']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Name'); ?></dt>
 		<dd>
-			<?php echo h($ticket['Ticket']['name']); ?>
+			<?php echo h($customer['Ticket']['name']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Stock'); ?></dt>
 		<dd>
-			<?php echo h($ticket['Ticket']['stock']); ?>
+			<?php echo h($customer['Ticket']['stock']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Issue'); ?></dt>
 		<dd>
-			<?php echo h($ticket['Ticket']['customer_count']); ?>
+			<?php echo h($customer['Ticket']['customer_count']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Created'); ?></dt>
 		<dd>
-			<?php echo h($ticket['Ticket']['created']); ?>
+			<?php echo h($customer['Ticket']['created']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Modified'); ?></dt>
 		<dd>
-			<?php echo h($ticket['Ticket']['modified']); ?>
+			<?php echo h($customer['Ticket']['modified']); ?>
 			&nbsp;
 		</dd>
 	</dl>
@@ -36,8 +36,8 @@
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('Edit Ticket'), array('action' => 'edit', $ticket['Ticket']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Ticket'), array('action' => 'delete', $ticket['Ticket']['id']), array(), __('Are you sure you want to delete # %s?', $ticket['Ticket']['id'])); ?> </li>
+		<li><?php echo $this->Html->link(__('Edit Ticket'), array('action' => 'edit', $customer['Ticket']['id'])); ?> </li>
+		<li><?php echo $this->Form->postLink(__('Delete Ticket'), array('action' => 'delete', $customer['Ticket']['id']), array(), __('Are you sure you want to delete # %s?', $customer['Ticket']['id'])); ?> </li>
 		<li><?php echo $this->Html->link(__('List Customers'), array('controller' => 'customers', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Customer'), array('controller' => 'customers', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Tickets'), array('action' => 'index')); ?> </li>
@@ -46,7 +46,7 @@
 </div>
 <div class="related">
 	<h3><?php echo __('Related Customers'); ?></h3>
-	<?php if (!empty($ticket['Customer'])): ?>
+	<?php if (!empty($customers)): ?>
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
 		<th><?php echo __('Id'); ?></th>
@@ -61,22 +61,22 @@
 		<th><?php echo __('Modified'); ?></th>
 		<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
-	<?php foreach ($ticket['Customer'] as $customer): ?>
+	<?php foreach ($customers as $customer): ?>
 		<tr>
-			<td><?php echo $customer['id']; ?></td>
-			<td><?php echo h($ticket['Ticket']['name']); ?></td>
-			<td><?php echo $customer['affiliation_id']; ?></td>
-			<td><?php echo $customer['primary_id']; ?></td>
-			<td><?php echo $customer['customer_name']; ?></td>
-			<td><?php echo $customer['tel']; ?></td>
-			<td><?php echo $customer['email']; ?></td>
-			<td><?php echo $customer['answer_id']; ?></td>
-			<td><?php echo $customer['created']; ?></td>
-			<td><?php echo $customer['modified']; ?></td>
+			<td><?php echo $customer['Customer']['id']; ?></td>
+			<td><?php echo h($customer['Ticket']['name']); ?></td>
+			<td><?php echo h($customer['Affiliation']['name']); ?></td>
+			<td><?php echo h($customer['Primary']['name']); ?></td>
+			<td><?php echo $customer['Customer']['customer_name']; ?></td>
+			<td><?php echo $customer['Customer']['tel']; ?></td>
+			<td><?php echo $customer['Customer']['email']; ?></td>
+			<td><?php echo h($customer['Answer']['name']); ?></td>
+			<td><?php echo $customer['Customer']['created']; ?></td>
+			<td><?php echo $customer['Customer']['modified']; ?></td>
 			<td class="actions">
-				<?php echo $this->Html->link(__('View'), array('controller' => 'customers', 'action' => 'view', $customer['id'])); ?>
-				<?php echo $this->Html->link(__('Edit'), array('controller' => 'customers', 'action' => 'edit', $customer['id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'customers', 'action' => 'delete', $customer['id']), array(), __('Are you sure you want to delete # %s?', $customer['id'])); ?>
+				<?php echo $this->Html->link(__('View'), array('controller' => 'customers', 'action' => 'view', $customer['Customer']['id'])); ?>
+				<?php echo $this->Html->link(__('Edit'), array('controller' => 'customers', 'action' => 'edit', $customer['Customer']['id'])); ?>
+				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'customers', 'action' => 'delete', $customer['Customer']['id']), array(), __('Are you sure you want to delete # %s?', $customer['Customer']['id'])); ?>
 			</td>
 		</tr>
 	<?php endforeach; ?>
