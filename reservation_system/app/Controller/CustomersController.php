@@ -24,7 +24,7 @@ class CustomersController extends AppController {
  */
 	public function index() {
 		$this->Customer->recursive = 0;
-		
+		$id = null;
 		//プルダウンのリスト
 		$selectKey = array(0 => '全体');
 		$selectKey += $this->Customer->Ticket->find('list');
