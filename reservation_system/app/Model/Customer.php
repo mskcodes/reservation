@@ -1,7 +1,7 @@
 <?php
 App::uses('AppModel', 'Model');
 App::uses('CustomersController' , 'AppController', 'Controller');
-
+y
 /**
  * Customer Model
  *
@@ -56,26 +56,6 @@ class Customer extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'answer_id' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'ticket_id' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
 	);
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
@@ -100,32 +80,14 @@ class Customer extends AppModel {
 			'fields' => '',
 			'order' => ''
 		),
-		/*
-		'Ticket' => array(
-			'className' => 'Ticket',
-			'foreignKey' => 'ticket_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'counterCache' => 'customer_count',
-            'counterScope' => array('answer_id' => 2)
-		),
-		*/
-		'Answer' => array(
-			'className' => 'Answer',
-			'foreignKey' => 'answer_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		)
 	);
 	
 	public $hasAndBelongsToMany = array(
-		'Ticket' => array(
-			'className' => 'Ticket',
-			'joinTable' => 'customers_tickets',
+		'Sales_info' => array(
+			'className' => 'Sales_info',
+			'joinTable' => 'sales_infos',
 			'foreignKey' => 'customer_id',
-			'associationForeignKey' => 'ticket_id',
+			'associationForeignKey' => 'sales_info_id',
 			'unique' => 'keepExisting',
 			'conditions' => '',
 			'fields' => '',

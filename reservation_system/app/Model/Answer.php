@@ -40,21 +40,6 @@ class Answer extends AppModel {
  *
  * @var array
  */
-	public $hasMany = array(
-		'Customer' => array(
-			'className' => 'Customer',
-			'foreignKey' => 'answer_id',
-			'dependent' => false,
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'exclusive' => '',
-			'finderQuery' => '',
-			'counterQuery' => ''
-		)
-	);
 
 
 /**
@@ -63,11 +48,11 @@ class Answer extends AppModel {
  * @var array
  */
 	public $hasAndBelongsToMany = array(
-		'Ticket' => array(
-			'className' => 'Ticket',
-			'joinTable' => 'answers_tickets',
+		'Sales_info' => array(
+			'className' => 'Sales_info',
+			'joinTable' => 'sales_infos',
 			'foreignKey' => 'answer_id',
-			'associationForeignKey' => 'ticket_id',
+			'associationForeignKey' => 'sales_info_id',
 			'unique' => 'keepExisting',
 			'conditions' => '',
 			'fields' => '',

@@ -1,5 +1,5 @@
 <?php
-App::uses('TicketsController' , 'AppController', 'Controller');
+App::uses('AnswersTicket' , 'AppController', 'Controller');
 /**
  * Customers Controller
  *
