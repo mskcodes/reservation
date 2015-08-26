@@ -187,7 +187,6 @@ class CustomersController extends AppController {
 	
 	
 	
-//ticket\viewのコピー
 	public function ticket_view($id = null) {
 		if (!$this->Customer->exists($id)) {
 			throw new NotFoundException(__('Invalid customer'));
@@ -198,5 +197,24 @@ class CustomersController extends AppController {
 
 	}
 
+
+	public function answer_view($id = null){
+		if (!$this->Customer->exists($id)) {
+			throw new NotFoundException(__('Invalid customer'));
+		}
+		$options = array('conditions' => array('Customer.answer_id' => $id));
+		$this->set('customer', $this->Customer->find('first', $options));
+		$this->set('customers', $this->Customer->find('all', $options));		
+	}
+
+
+	public function affiliation_view($id = null){
+		if (!$this->Customer->exists($id)) {
+			throw new NotFoundException(__('Invalid customer'));
+		}
+		$options = array('conditions' => array('Customer.affiliation_id' => $id));
+		$this->set('customer', $this->Customer->find('first', $options));
+		$this->set('customers', $this->Customer->find('all', $options));		
+	}
 	
 }

@@ -5,7 +5,6 @@
 	<?php
 		echo $this->Form->input('name');
 		echo $this->Form->input('stock');
-		echo $this->Form->input('customer_count');
 
 	?>
 	</fieldset>

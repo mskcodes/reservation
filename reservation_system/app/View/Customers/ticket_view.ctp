@@ -36,12 +36,14 @@
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('Edit Ticket'), array('action' => 'edit', $customer['Ticket']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Ticket'), array('action' => 'delete', $customer['Ticket']['id']), array(), __('Are you sure you want to delete # %s?', $customer['Ticket']['id'])); ?> </li>
+		<li><?php echo $this->Html->link(__('Edit Ticket'), array('controller' => 'tickets', 'action' => 'edit', $customer['Ticket']['id'])); ?> </li>
+		<li><?php echo $this->Form->postLink(__('Delete Ticket'), array('controller' => 'tickets', 'action' => 'delete', $customer['Ticket']['id']), array(), __('Are you sure you want to delete # %s?', $customer['Ticket']['id'])); ?> </li>
 		<li><?php echo $this->Html->link(__('List Customers'), array('controller' => 'customers', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Customer'), array('controller' => 'customers', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Tickets'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Ticket'), array('action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Customer'), array('controller' => 'customers', 'action' => 'add')); ?></li>
+		<li><?php echo $this->Html->link(__('List Affiliations'), array('controller' => 'affiliations', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Affiliation'), array('controller' => 'affiliations', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Tickets'), array('controller' => 'tickets', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Ticket'), array('controller' => 'tickets', 'action' => 'add')); ?></li>
 	</ul>
 </div>
 <div class="related">

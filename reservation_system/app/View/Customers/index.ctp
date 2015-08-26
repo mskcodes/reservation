@@ -22,7 +22,7 @@
 	<tr>
 		<td><?php echo h($customer['Customer']['id']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($customer['Affiliation']['name'], array('controller' => 'affiliations', 'action' => 'view', $customer['Affiliation']['id'])); ?>
+			<?php echo $this->Html->link($customer['Affiliation']['name'], array('controller' => 'customers', 'action' => 'affiliation_view', $customer['Affiliation']['id'])); ?>
 		</td>
 		<td>
 			<?php echo $this->Html->link($customer['Primary']['name'], array('controller' => 'primaries', 'action' => 'view', $customer['Primary']['id'])); ?>
@@ -34,7 +34,7 @@
 			<?php echo $this->Html->link($customer['Ticket']['name'], array('controller' => 'customers', 'action' => 'ticket_view', $customer['Ticket']['id'])); ?>
 		</td>
 		<td>
-			<?php echo $this->Html->link($customer['Answer']['name'], array('controller' => 'answers', 'action' => 'view', $customer['Answer']['id'])); ?>
+			<?php echo $this->Html->link($customer['Answer']['name'], array('controller' => 'customers', 'action' => 'answer_view', $customer['Answer']['id'])); ?>
 		</td>
 		<td><?php echo h($customer['Customer']['created']); ?>&nbsp;</td>
 		<td><?php echo h($customer['Customer']['modified']); ?>&nbsp;</td>

@@ -785,6 +785,9 @@ msgstr "チケット別集計"
 msgid "Total"
 msgstr "合計"
 
+msgid "customer_count"
+msgstr "参加者数"
+
 msgid ""
 msgstr ""
 
