@@ -59,6 +59,36 @@ class Ticket extends AppModel {
  *
  * @var array
  */
+	public $hasAndBelongsToMany = array(
+		'Customer' => array(
+			'className' => 'Customer',
+			'joinTable' => 'customers_tickets',
+			'foreignKey' => 'ticket_id',
+			'associationForeignKey' => 'customer_id',
+			'unique' => 'keepExisting',
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'finderQuery' => '',
+		),
+		
+		'Answer' => array(
+			'className' => 'Answer',
+			'joinTable' => 'answers_tickets',
+			'foreignKey' => 'ticket_id',
+			'associationForeignKey' => 'answer_id',
+			'unique' => 'keepExisting',
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'finderQuery' => '',
+		)
+	);
+ /*
 	public $hasMany = array(
 		'Customer' => array(
 			'className' => 'Customer',
@@ -74,5 +104,7 @@ class Ticket extends AppModel {
 			'counterQuery' => '',
 		)
 	);
-
+	*/
+	
+	
 }

@@ -10,7 +10,7 @@
 			<th><?php echo $this->Paginator->sort('customer_name'); ?></th>
 			<th><?php echo $this->Paginator->sort('tel'); ?></th>
 			<th><?php echo $this->Paginator->sort('email'); ?></th>
-			<th><?php echo $this->Paginator->sort('ticket_id'); ?></th>
+			<!--<th><?php echo $this->Paginator->sort('ticket_id'); ?></th>-->
 			<th><?php echo $this->Paginator->sort('answer_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('created'); ?></th>
 			<th><?php echo $this->Paginator->sort('modified'); ?></th>
@@ -30,9 +30,9 @@
 		<td><?php echo h($customer['Customer']['customer_name']); ?>&nbsp;</td>
 		<td><?php echo h($customer['Customer']['tel']); ?>&nbsp;</td>
 		<td><?php echo h($customer['Customer']['email']); ?>&nbsp;</td>
-		<td>
+		<!--<td>
 			<?php echo $this->Html->link($customer['Ticket']['name'], array('controller' => 'customers', 'action' => 'ticket_view', $customer['Ticket']['id'])); ?>
-		</td>
+		</td>-->
 		<td>
 			<?php echo $this->Html->link($customer['Answer']['name'], array('controller' => 'customers', 'action' => 'answer_view', $customer['Answer']['id'])); ?>
 		</td>

@@ -100,6 +100,7 @@ class Customer extends AppModel {
 			'fields' => '',
 			'order' => ''
 		),
+		/*
 		'Ticket' => array(
 			'className' => 'Ticket',
 			'foreignKey' => 'ticket_id',
@@ -109,6 +110,7 @@ class Customer extends AppModel {
 			'counterCache' => 'customer_count',
             'counterScope' => array('answer_id' => 2)
 		),
+		*/
 		'Answer' => array(
 			'className' => 'Answer',
 			'foreignKey' => 'answer_id',
@@ -117,5 +119,22 @@ class Customer extends AppModel {
 			'order' => ''
 		)
 	);
+	
+	public $hasAndBelongsToMany = array(
+		'Ticket' => array(
+			'className' => 'Ticket',
+			'joinTable' => 'customers_tickets',
+			'foreignKey' => 'customer_id',
+			'associationForeignKey' => 'ticket_id',
+			'unique' => 'keepExisting',
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'finderQuery' => '',
+		)
+	);
+
 	
 }

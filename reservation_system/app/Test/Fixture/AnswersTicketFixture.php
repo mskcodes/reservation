@@ -32,8 +32,8 @@ class AnswersTicketFixture extends CakeTestFixture {
 			'id' => 1,
 			'answer_id' => 1,
 			'ticket_id' => 1,
-			'created' => '2015-08-25 14:17:25',
-			'modified' => '2015-08-25 14:17:25'
+			'created' => '2015-08-26 13:44:47',
+			'modified' => '2015-08-26 13:44:47'
 		),
 	);
 

@@ -14,7 +14,12 @@ class AnswerTest extends CakeTestCase {
  */
 	public $fixtures = array(
 		'app.answer',
-		'app.customer'
+		'app.customer',
+		'app.affiliation',
+		'app.primary',
+		'app.ticket',
+		'app.customers_ticket',
+		'app.answers_ticket'
 	);
 
 /**

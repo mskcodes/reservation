@@ -18,7 +18,8 @@ class AnswersTicketTest extends CakeTestCase {
 		'app.customer',
 		'app.affiliation',
 		'app.primary',
-		'app.ticket'
+		'app.ticket',
+		'app.customers_ticket'
 	);
 
 /**
