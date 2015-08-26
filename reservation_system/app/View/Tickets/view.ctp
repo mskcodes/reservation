@@ -38,10 +38,10 @@
 	<ul>
 		<li><?php echo $this->Html->link(__('Edit Ticket'), array('action' => 'edit', $ticket['Ticket']['id'])); ?> </li>
 		<li><?php echo $this->Form->postLink(__('Delete Ticket'), array('action' => 'delete', $ticket['Ticket']['id']), array(), __('Are you sure you want to delete # %s?', $ticket['Ticket']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Tickets'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Ticket'), array('action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Customers'), array('controller' => 'customers', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Customer'), array('controller' => 'customers', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Tickets'), array('action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Ticket'), array('action' => 'add')); ?> </li>
 	</ul>
 </div>
 <div class="related">
@@ -64,7 +64,7 @@
 	<?php foreach ($ticket['Customer'] as $customer): ?>
 		<tr>
 			<td><?php echo $customer['id']; ?></td>
-			<td><?php echo $customer['ticket_id']; ?></td>
+			<td><?php echo h($ticket['Ticket']['name']); ?></td>
 			<td><?php echo $customer['affiliation_id']; ?></td>
 			<td><?php echo $customer['primary_id']; ?></td>
 			<td><?php echo $customer['customer_name']; ?></td>

@@ -40,6 +40,7 @@ class TicketsController extends AppController {
 		$options = array('conditions' => array('Ticket.' . $this->Ticket->primaryKey => $id));
 		$this->set('options' , array('conditions' => array('Ticket.' . $this->Ticket->primaryKey => $id)));
 		$this->set('ticket', $this->Ticket->find('first', $options));
+		$this->set('ta', $this->Paginator->paginate());
 	}
 
 /**

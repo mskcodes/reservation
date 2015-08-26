@@ -3,7 +3,7 @@
 	<fieldset>
 		<legend><?php echo __('Add Answer'); ?></legend>
 	<?php
-		echo $this->Form->input('type');
+		echo $this->Form->input('name');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>

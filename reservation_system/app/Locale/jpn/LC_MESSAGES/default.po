@@ -295,7 +295,7 @@ msgstr "所属削除"
 #: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:28
 #: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:28
 msgid "Related Customers"
-msgstr "顧客"
+msgstr "関連顧客"
 
 #: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:33
 #: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:33
@@ -781,6 +781,15 @@ msgstr "発行数"
 
 msgid "serch_tickets"
 msgstr "チケット別集計"
+
+msgid "Total"
+msgstr "合計"
+
+msgid "customer_count"
+msgstr "参加者数"
+
+msgid "Related Tickets"
+msgstr "関連チケット"
 
 msgid ""
 msgstr ""

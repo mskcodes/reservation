@@ -1,24 +1,21 @@
 <?php
 App::uses('AppModel', 'Model');
-App::uses('CustomersController' , 'AppController', 'Controller');
-y
 /**
- * Customer Model
+ * SalesInfo Model
  *
- * @property Affiliation $Affiliation
- * @property Primary $Primary
+ * @property Customer $Customer
+ * @property Ticket $Ticket
  * @property Answer $Answer
+ * @property Customer $Customer
  */
-class Customer extends AppModel {
+class SalesInfo extends AppModel {
 
 /**
  * Display field
  *
  * @var string
  */
-	public $displayField = 'customer_name';
-	public $components = array('Paginator', 'Session');
-
+	public $displayField = 'id';
 
 /**
  * Validation rules
@@ -26,9 +23,9 @@ class Customer extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'primary_id' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
+		'customer_id' => array(
+			'numeric' => array(
+				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -36,9 +33,9 @@ class Customer extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'customer_name' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
+		'ticket_id' => array(
+			'numeric' => array(
+				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -46,9 +43,9 @@ class Customer extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'email' => array(
-			'email' => array(
-				'rule' => array('email'),
+		'answer_id' => array(
+			'numeric' => array(
+				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -66,37 +63,50 @@ class Customer extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
-		'Affiliation' => array(
-			'className' => 'Affiliation',
-			'foreignKey' => 'affiliation_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		),
-		'Primary' => array(
-			'className' => 'Primary',
-			'foreignKey' => 'primary_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		),
-	);
-	
-	public $hasAndBelongsToMany = array(
-		'Sales_info' => array(
-			'className' => 'Sales_info',
-			'joinTable' => 'sales_infos',
+		'Customer' => array(
+			'className' => 'Customer',
 			'foreignKey' => 'customer_id',
-			'associationForeignKey' => 'sales_info_id',
-			'unique' => 'keepExisting',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
+		'Ticket' => array(
+			'className' => 'Ticket',
+			'foreignKey' => 'ticket_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'counterCache' => 'customer_count',
+            'counterScope' => array('answer_id' => 2)
+		),
+		'Answer' => array(
+			'className' => 'Answer',
+			'foreignKey' => 'answer_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		)
+	);
+
+/**
+ * hasMany associations
+ *
+ * @var array
+ */
+	public $hasMany = array(
+		'Customer' => array(
+			'className' => 'Customer',
+			'foreignKey' => 'sales_info_id',
+			'dependent' => false,
 			'conditions' => '',
 			'fields' => '',
 			'order' => '',
 			'limit' => '',
 			'offset' => '',
+			'exclusive' => '',
 			'finderQuery' => '',
+			'counterQuery' => ''
 		)
 	);
 
-	
 }

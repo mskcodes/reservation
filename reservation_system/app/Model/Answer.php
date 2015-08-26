@@ -4,6 +4,7 @@ App::uses('AppModel', 'Model');
  * Answer Model
  *
  * @property Customer $Customer
+ * @property Ticket $Ticket
  */
 class Answer extends AppModel {
 
@@ -12,7 +13,7 @@ class Answer extends AppModel {
  *
  * @var string
  */
-	public $displayField = 'type';
+	public $displayField = 'name';
 
 /**
  * Validation rules
@@ -20,7 +21,7 @@ class Answer extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'type' => array(
+		'name' => array(
 			'notEmpty' => array(
 				'rule' => array('notEmpty'),
 				//'message' => 'Your custom message here',
@@ -39,19 +40,26 @@ class Answer extends AppModel {
  *
  * @var array
  */
-	public $hasMany = array(
-		'Customer' => array(
-			'className' => 'Customer',
+
+
+/**
+ * hasAndBelongsToMany associations
+ *
+ * @var array
+ */
+	public $hasAndBelongsToMany = array(
+		'Sales_info' => array(
+			'className' => 'Sales_info',
+			'joinTable' => 'sales_infos',
 			'foreignKey' => 'answer_id',
-			'dependent' => false,
+			'associationForeignKey' => 'sales_info_id',
+			'unique' => 'keepExisting',
 			'conditions' => '',
 			'fields' => '',
 			'order' => '',
 			'limit' => '',
 			'offset' => '',
-			'exclusive' => '',
 			'finderQuery' => '',
-			'counterQuery' => ''
 		)
 	);
 

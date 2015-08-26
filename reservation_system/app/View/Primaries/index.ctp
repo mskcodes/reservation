@@ -4,7 +4,7 @@
 	<thead>
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
-			<th><?php echo $this->Paginator->sort('primary_type'); ?></th>
+			<th><?php echo $this->Paginator->sort('name'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	</thead>
@@ -12,7 +12,7 @@
 	<?php foreach ($primaries as $primary): ?>
 	<tr>
 		<td><?php echo h($primary['Primary']['id']); ?>&nbsp;</td>
-		<td><?php echo h($primary['Primary']['primary_type']); ?>&nbsp;</td>
+		<td><?php echo h($primary['Primary']['name']); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $primary['Primary']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $primary['Primary']['id'])); ?>

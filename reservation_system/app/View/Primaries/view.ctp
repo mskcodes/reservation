@@ -8,7 +8,7 @@
 		</dd>
 		<dt><?php echo __('Primary Type'); ?></dt>
 		<dd>
-			<?php echo h($primary['Primary']['primary_type']); ?>
+			<?php echo h($primary['Primary']['name']); ?>
 			&nbsp;
 		</dd>
 	</dl>

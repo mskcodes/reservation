@@ -1,11 +1,11 @@
 <?php
-App::uses('Answer', 'Model');
+App::uses('AnswersTicket', 'Model');
 
 /**
- * Answer Test Case
+ * AnswersTicket Test Case
  *
  */
-class AnswerTest extends CakeTestCase {
+class AnswersTicketTest extends CakeTestCase {
 
 /**
  * Fixtures
@@ -13,13 +13,13 @@ class AnswerTest extends CakeTestCase {
  * @var array
  */
 	public $fixtures = array(
+		'app.answers_ticket',
 		'app.answer',
 		'app.customer',
 		'app.affiliation',
 		'app.primary',
 		'app.ticket',
-		'app.customers_ticket',
-		'app.answers_ticket'
+		'app.customers_ticket'
 	);
 
 /**
@@ -29,7 +29,7 @@ class AnswerTest extends CakeTestCase {
  */
 	public function setUp() {
 		parent::setUp();
-		$this->Answer = ClassRegistry::init('Answer');
+		$this->AnswersTicket = ClassRegistry::init('AnswersTicket');
 	}
 
 /**
@@ -38,7 +38,7 @@ class AnswerTest extends CakeTestCase {
  * @return void
  */
 	public function tearDown() {
-		unset($this->Answer);
+		unset($this->AnswersTicket);
 
 		parent::tearDown();
 	}

@@ -1,3 +1,4 @@
+<?php var_dump($customer); ?>
 <div class="customers view">
 <h2><?php echo __('Customer'); ?></h2>
 	<dl>
@@ -8,12 +9,12 @@
 		</dd>
 		<dt><?php echo __('Affiliation'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($customer['Affiliation']['affiliation_type'], array('controller' => 'affiliations', 'action' => 'view', $customer['Affiliation']['id'])); ?>
+			<?php echo $this->Html->link($customer['Affiliation']['name'], array('controller' => 'affiliations', 'action' => 'view', $customer['Affiliation']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Primary'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($customer['Primary']['primary_type'], array('controller' => 'primaries', 'action' => 'view', $customer['Primary']['id'])); ?>
+			<?php echo $this->Html->link($customer['Primary']['name'], array('controller' => 'primaries', 'action' => 'view', $customer['Primary']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Customer Name'); ?></dt>
@@ -31,14 +32,14 @@
 			<?php echo h($customer['Customer']['email']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Ticket'); ?></dt>
+		<!--<dt><?php echo __('Ticket'); ?></dt>
 		<dd>
 			<?php echo $this->Html->link($customer['Ticket']['name'], array('controller' => 'tickets', 'action' => 'view', $customer['Ticket']['id'])); ?>
 			&nbsp;
-		</dd>
+		</dd>-->
 		<dt><?php echo __('Answer'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($customer['Answer']['type'], array('controller' => 'answers', 'action' => 'view', $customer['Answer']['id'])); ?>
+			<?php echo $this->Html->link($customer['Answer']['name'], array('controller' => 'answers', 'action' => 'view', $customer['Answer']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Created'); ?></dt>
@@ -66,3 +67,38 @@
 		<li><?php echo $this->Html->link(__('New Ticket'), array('controller' => 'tickets', 'action' => 'add')); ?></li>
 	</ul>
 </div>
+<div class="related">
+	<h3><?php echo __('Related Tickets'); ?></h3>
+	<?php if (!empty($customer['Ticket'])): ?>
+	<table cellpadding = "0" cellspacing = "0">
+	<tr>
+		<th><?php echo __('Id'); ?></th>
+		<th><?php echo __('Ticket Id'); ?></th>
+		<th><?php echo __('Answer Id'); ?></th>
+		<th><?php echo __('Created'); ?></th>
+		<th><?php echo __('Modified'); ?></th>
+		<th class="actions"><?php echo __('Actions'); ?></th>
+	</tr>
+	<?php foreach ($customer['Ticket'] as $customer): ?>
+		<tr>
+			<td><?php echo $customer['id']; ?></td>
+			<td><?php echo h($customer['name']); ?></td>
+			<td><?php echo h($customer['Answer']['name']); ?></td>
+			<td><?php echo $customer['created']; ?></td>
+			<td><?php echo $customer['modified']; ?></td>
+			<td class="actions">
+				<?php echo $this->Html->link(__('View'), array('controller' => 'customers', 'action' => 'view', $customer['id'])); ?>
+				<?php echo $this->Html->link(__('Edit'), array('controller' => 'customers', 'action' => 'edit', $customer['id'])); ?>
+				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'customers', 'action' => 'delete', $customer['id']), array(), __('Are you sure you want to delete # %s?', $customer['id'])); ?>
+			</td>
+		</tr>
+	<?php endforeach; ?>
+	</table>
+<?php endif; ?>
+	<div class="actions">
+		<ul>
+			<li><?php echo $this->Html->link(__('New Customer'), array('controller' => 'customers', 'action' => 'add')); ?> </li>
+		</ul>
+	</div>
+</div>
+

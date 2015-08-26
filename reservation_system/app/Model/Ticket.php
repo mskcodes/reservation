@@ -40,7 +40,7 @@ class Ticket extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'ticket_comment_count' => array(
+		'customer_count' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
@@ -59,20 +59,21 @@ class Ticket extends AppModel {
  *
  * @var array
  */
-	public $hasMany = array(
-		'Customer' => array(
-			'className' => 'Customer',
+ 	public $hasAndBelongsToMany = array(
+		'Sales_info' => array(
+			'className' => 'Sales_info',
+			'joinTable' => 'sales_infos',
 			'foreignKey' => 'ticket_id',
-			'dependent' => false,
+			'associationForeignKey' => 'sales_info_id',
+			'unique' => 'keepExisting',
 			'conditions' => '',
 			'fields' => '',
 			'order' => '',
 			'limit' => '',
 			'offset' => '',
-			'exclusive' => '',
 			'finderQuery' => '',
-			'counterQuery' => '',
 		)
 	);
-
+	
+	
 }

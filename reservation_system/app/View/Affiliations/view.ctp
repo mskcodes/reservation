@@ -8,7 +8,7 @@
 		</dd>
 		<dt><?php echo __('Affiliation Type'); ?></dt>
 		<dd>
-			<?php echo h($affiliation['Affiliation']['affiliation_type']); ?>
+			<?php echo h($affiliation['Affiliation']['name']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('email'); ?></dt>
@@ -59,7 +59,7 @@
 	<?php foreach ($affiliation['Customer'] as $customer): ?>
 		<tr>
 			<td><?php echo $customer['id']; ?></td>
-			<td><?php echo h($affiliation['Affiliation']['affiliation_type']); ?></td>
+			<td><?php echo h($affiliation['Affiliation']['name']); ?></td>
 			<td><?php echo $customer['primary_id']; ?></td>
 			<td><?php echo $customer['customer_name']; ?></td>
 			<td><?php echo $customer['tel']; ?></td>
@@ -81,7 +81,7 @@
 		<ul>
 			<li><?php echo $this->Html->link(__('List Affiliations'), array('controller' => 'customers', 'action' => 'index')); ?> </li>
 	<?php foreach ($affiliations as $affiliation): ?>
-			<li><?php echo $this->Html->link(__(h($affiliation['Affiliation']['affiliation_type'])), array('action' => '', $affiliation['Affiliation']['id'])); ?></li>
+			<li><?php echo $this->Html->link(__(h($affiliation['Affiliation']['name'])), array('action' => '', $affiliation['Affiliation']['id'])); ?></li>
 <?php endforeach; ?>
 		</ul>
 	</div>
