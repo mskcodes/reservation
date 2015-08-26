@@ -1,3 +1,4 @@
+<?php var_dump($customer); ?>
 <div class="customers view">
 <h2><?php echo __('Customer'); ?></h2>
 	<dl>
