@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.2.11
+-- version 4.3.11
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 2015 年 8 朁E27 日 04:24
--- サーバのバージョン： 5.6.21
--- PHP Version: 5.6.3
+-- Generation Time: 2015 年 8 朁E27 日 12:52
+-- サーバのバージョン： 5.6.24
+-- PHP Version: 5.6.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -19,11 +19,7 @@ SET time_zone = "+00:00";
 --
 -- Database: `reservation`
 --
-<<<<<<< HEAD
 CREATE DATABASE IF NOT EXISTS `reservation` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-=======
-CREATE DATABASE IF NOT EXISTS `reservation` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
->>>>>>> bf6699c4ad02ac8ae6cdf22bd65e1c0f6097996c
 USE `reservation`;
 
 -- --------------------------------------------------------
@@ -33,7 +29,7 @@ USE `reservation`;
 --
 
 CREATE TABLE IF NOT EXISTS `affiliations` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
   `tel` varchar(64) NOT NULL,
   `email` varchar(64) NOT NULL,
   `name` varchar(64) DEFAULT NULL,
@@ -58,7 +54,7 @@ INSERT INTO `affiliations` (`id`, `tel`, `email`, `name`, `created`, `modified`)
 --
 
 CREATE TABLE IF NOT EXISTS `answers` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
   `name` varchar(12) NOT NULL,
   `sales_info_id` int(11) NOT NULL,
   `created` datetime NOT NULL,
@@ -81,7 +77,7 @@ INSERT INTO `answers` (`id`, `name`, `sales_info_id`, `created`, `modified`) VAL
 --
 
 CREATE TABLE IF NOT EXISTS `customers` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
   `affiliation_id` int(11) DEFAULT NULL,
   `primary_id` int(11) NOT NULL,
   `customer_name` varchar(30) NOT NULL,
@@ -115,7 +111,7 @@ INSERT INTO `customers` (`id`, `affiliation_id`, `primary_id`, `customer_name`, 
 --
 
 CREATE TABLE IF NOT EXISTS `primarys` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
   `name` varchar(12) CHARACTER SET utf8 DEFAULT NULL,
   `created` datetime NOT NULL,
   `modified` datetime NOT NULL
@@ -136,7 +132,7 @@ INSERT INTO `primarys` (`id`, `name`, `created`, `modified`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `sales_infos` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
   `customer_id` int(11) NOT NULL,
   `ticket_id` int(11) NOT NULL,
   `answer_id` int(11) NOT NULL,
@@ -151,7 +147,7 @@ CREATE TABLE IF NOT EXISTS `sales_infos` (
 --
 
 CREATE TABLE IF NOT EXISTS `tickets` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
   `name` varchar(128) CHARACTER SET utf8 NOT NULL,
   `stock` int(11) NOT NULL,
   `customer_count` int(11) DEFAULT NULL,
@@ -177,37 +173,37 @@ INSERT INTO `tickets` (`id`, `name`, `stock`, `customer_count`, `sales_info_id`,
 -- Indexes for table `affiliations`
 --
 ALTER TABLE `affiliations`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `answers`
 --
 ALTER TABLE `answers`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `customers`
 --
 ALTER TABLE `customers`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `primarys`
 --
 ALTER TABLE `primarys`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `sales_infos`
 --
 ALTER TABLE `sales_infos`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `tickets`
 --
 ALTER TABLE `tickets`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -217,32 +213,32 @@ ALTER TABLE `tickets`
 -- AUTO_INCREMENT for table `affiliations`
 --
 ALTER TABLE `affiliations`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `answers`
 --
 ALTER TABLE `answers`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `customers`
 --
 ALTER TABLE `customers`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT for table `primarys`
 --
 ALTER TABLE `primarys`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `sales_infos`
 --
 ALTER TABLE `sales_infos`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `tickets`
 --
 ALTER TABLE `tickets`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
