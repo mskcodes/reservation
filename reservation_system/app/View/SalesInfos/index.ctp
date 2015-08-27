@@ -21,13 +21,13 @@
 	<tr>
 		<td><?php echo h($salesInfo['SalesInfo']['id']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($salesInfo['Customer']['customer_name'], array('controller' => 'customers', 'action' => 'view', $salesInfo['Customer']['id'])); ?>
+			<?php echo $this->Html->link($salesInfo['Customer']['customer_name'], array('controller' => 'sales_infos', 'action' => 'customer_view', $salesInfo['Customer']['id'])); ?>
 		</td>
 		<td>
-			<?php echo $this->Html->link($salesInfo['Ticket']['ticket_name'], array('controller' => 'tickets', 'action' => 'view', $salesInfo['Ticket']['id'])); ?>
+			<?php echo $this->Html->link($salesInfo['Ticket']['ticket_name'], array('controller' => 'sales_infos', 'action' => 'ticket_view', $salesInfo['Ticket']['id'])); ?>
 		</td>
 		<td>
-			<?php echo $this->Html->link($salesInfo['Answer']['answer_name'], array('controller' => 'answers', 'action' => 'view', $salesInfo['Answer']['id'])); ?>
+			<?php echo $this->Html->link($salesInfo['Answer']['answer_name'], array('controller' => 'sales_infos', 'action' => 'answer_view', $salesInfo['Ticket']['id'] , $salesInfo['Answer']['id'])); ?>
 		</td>
 		<td><?php echo h($salesInfo['SalesInfo']['created']); ?>&nbsp;</td>
 		<td><?php echo h($salesInfo['SalesInfo']['modified']); ?>&nbsp;</td>

@@ -809,14 +809,20 @@ msgstr "売上情報編集"
 msgid "Delete Sales Info"
 msgstr "売上情報削除"
 
-msgid ""
-msgstr ""
+msgid "Ticket Name"
+msgstr "チケット名"
 
-msgid ""
-msgstr ""
+msgid "SalesInfo Id"
+msgstr "売上情報ID"
 
-msgid ""
-msgstr ""
+msgid "Answer Name"
+msgstr "参加状況"
+
+msgid "Sales Created"
+msgstr "売上情報作成日"
+
+msgid "SalesModified"
+msgstr "売上情報更新日"
 
 msgid ""
 msgstr ""

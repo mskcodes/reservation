@@ -120,10 +120,10 @@ class SalesInfosController extends AppController {
 		$this->set(compact('customers', 'tickets', 'answers'));
 		
 		
-		$affiliations = $this->Customer->Affiliation->find('list');
-		$primaries = $this->Customer->Primary->find('list');
-		$answers = $this->Customer->Answer->find('list');
-		$tickets = $this->Customer->Ticket->find('list');
+		$affiliations = $this->SalesInfo->Affiliation->find('list');
+		$primaries = $this->SalesInfo->Primary->find('list');
+		$answers = $this->SalesInfo->Answer->find('list');
+		$tickets = $this->SalesInfo->Ticket->find('list');
 		$this->set(compact('affiliations', 'primaries', 'tickets' ,  'answers'));
 /*
 		$this->Customer->recursive = 0;
@@ -185,37 +185,40 @@ class SalesInfosController extends AppController {
 	}
 	
 	
-	/*
+	
+	public function customer_view($id = null){
+		if (!$this->SalesInfo->exists($id)) {
+			throw new NotFoundException(__('Invalid customer'));
+		}
+		$options = array('conditions' => array('SalesInfo.customer_id' => $id));
+		$this->SalesInfo->recursive = 2;
+		$this->set('customer', $this->SalesInfo->find('first', $options));
+		$this->set('customers', $this->SalesInfo->find('all', $options));		
+	}
+	
+	
 	public function ticket_view($id = null) {
-		if (!$this->Customer->exists($id)) {
-			throw new NotFoundException(__('Invalid customer'));
+		if (!$this->SalesInfo->exists($id)) {
+			throw new NotFoundException(__('Invalid ticket'));
 		}
-		$options = array('conditions' => array('Customer.ticket_id' => $id));
-		$this->set('customer', $this->Customer->find('first', $options));		
-		$this->set('customers', $this->Customer->find('all', $options));		
+		$this->SalesInfo->recursive = 2;
+		$options = array('conditions' => array('SalesInfo.ticket_id' => $id));
+		$this->set('ticket', $this->SalesInfo->find('first', $options));		
+		$this->set('tickets', $this->SalesInfo->find('all', $options));		
 
 	}
 
 
-	public function answer_view($id = null){
-		if (!$this->Customer->exists($id)) {
-			throw new NotFoundException(__('Invalid customer'));
+	public function answer_view($tid = null , $aid = null){
+		if (!$this->SalesInfo->exists($tid) && !$this->SalesInfo->exists($aid)) {
+			throw new NotFoundException(__('Invalid answer'));
 		}
-		$options = array('conditions' => array('Customer.answer_id' => $id));
-		$this->set('customer', $this->Customer->find('first', $options));
-		$this->set('customers', $this->Customer->find('all', $options));		
+		$this->SalesInfo->recursive = 3;
+		$options = array('conditions' => array('SalesInfo.ticket_id' => $tid , 'SalesInfo.answer_id' => $aid));
+		$this->set('answer', $this->SalesInfo->find('first', $options));
+		$this->set('answers', $this->SalesInfo->find('all', $options));		
 	}
 
-
-	public function affiliation_view($id = null){
-		if (!$this->Customer->exists($id)) {
-			throw new NotFoundException(__('Invalid customer'));
-		}
-		$options = array('conditions' => array('Customer.affiliation_id' => $id));
-		$this->set('customer', $this->Customer->find('first', $options));
-		$this->set('customers', $this->Customer->find('all', $options));		
-	}
-	*/
 	
 	
 	
