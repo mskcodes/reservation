@@ -14,7 +14,9 @@ class AffiliationTest extends CakeTestCase {
  */
 	public $fixtures = array(
 		'app.affiliation',
-		'app.customer'
+		'app.customer',
+		'app.primary',
+		'app.sales_info'
 	);
 
 /**

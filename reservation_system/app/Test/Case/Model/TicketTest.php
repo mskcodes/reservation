@@ -14,10 +14,7 @@ class TicketTest extends CakeTestCase {
  */
 	public $fixtures = array(
 		'app.ticket',
-		'app.customer',
-		'app.affiliation',
-		'app.primary',
-		'app.answer'
+		'app.sales_info'
 	);
 
 /**

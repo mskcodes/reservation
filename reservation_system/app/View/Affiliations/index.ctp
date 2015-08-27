@@ -4,7 +4,7 @@
 	<thead>
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
-			<th><?php echo $this->Paginator->sort('name'); ?></th>
+			<th><?php echo $this->Paginator->sort('affiliation_name'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	</thead>
@@ -12,7 +12,7 @@
 	<?php foreach ($affiliations as $affiliation): ?>
 	<tr>
 		<td><?php echo h($affiliation['Affiliation']['id']); ?>&nbsp;</td>
-		<td><?php echo h($affiliation['Affiliation']['name']); ?>&nbsp;</td>
+		<td><?php echo h($affiliation['Affiliation']['affiliation_name']); ?>&nbsp;</td>
 		<td><?php echo h($affiliation['Affiliation']['tel']); ?>&nbsp;</td>
 		<td><?php echo h($affiliation['Affiliation']['email']); ?>&nbsp;</td>
 		<td class="actions">
@@ -41,6 +41,8 @@
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
+		<li><?php echo $this->Html->link(__('List Sales Infos'), array('controller' => 'sales_infos', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Sales Info'), array('controller' => 'sales_infos', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Customers'), array('controller' => 'customers', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Customer'), array('controller' => 'customers', 'action' => 'add')); ?></li>
 		<li><?php echo $this->Html->link(__('List Affiliations'), array('controller' => 'affiliations', 'action' => 'index')); ?> </li>

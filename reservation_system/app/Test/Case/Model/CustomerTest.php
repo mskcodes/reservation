@@ -16,7 +16,7 @@ class CustomerTest extends CakeTestCase {
 		'app.customer',
 		'app.affiliation',
 		'app.primary',
-		'app.answer'
+		'app.sales_info'
 	);
 
 /**

@@ -19,7 +19,7 @@ class Primary extends AppModel {
  *
  * @var string
  */
-	public $displayField = 'name';
+	public $displayField = 'primary_name';
 
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed

@@ -6,7 +6,9 @@ App::uses('AppModel', 'Model');
  * @property Customer $Customer
  * @property Ticket $Ticket
  * @property Answer $Answer
+ * @property Answer $Answer
  * @property Customer $Customer
+ * @property Ticket $Ticket
  */
 class SalesInfo extends AppModel {
 
@@ -94,8 +96,34 @@ class SalesInfo extends AppModel {
  * @var array
  */
 	public $hasMany = array(
+		'Answer' => array(
+			'className' => 'Answer',
+			'foreignKey' => 'sales_info_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
 		'Customer' => array(
 			'className' => 'Customer',
+			'foreignKey' => 'sales_info_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
+		'Ticket' => array(
+			'className' => 'Ticket',
 			'foreignKey' => 'sales_info_id',
 			'dependent' => false,
 			'conditions' => '',

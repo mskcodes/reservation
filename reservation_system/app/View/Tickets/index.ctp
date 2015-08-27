@@ -4,7 +4,7 @@
 	<thead>
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
-			<th><?php echo $this->Paginator->sort('name'); ?></th>
+			<th><?php echo $this->Paginator->sort('ticket_name'); ?></th>
 			<th><?php echo $this->Paginator->sort('stock'); ?></th>
 			<th><?php echo $this->Paginator->sort(__('customer_count')); ?></th>
 			<th><?php echo $this->Paginator->sort('created'); ?></th>
@@ -16,7 +16,7 @@
 	<?php foreach ($tickets as $ticket): ?>
 	<tr>
 		<td><?php echo h($ticket['Ticket']['id']); ?>&nbsp;</td>
-		<td><?php echo h($ticket['Ticket']['name']); ?>&nbsp;</td>
+		<td><?php echo h($ticket['Ticket']['ticket_name']); ?>&nbsp;</td>
 		<td><?php echo h($ticket['Ticket']['stock']); ?>&nbsp;</td>
 		<td><?php echo h($ticket['Ticket']['customer_count']); ?>&nbsp;</td>
 		<td><?php echo h($ticket['Ticket']['created']); ?>&nbsp;</td>
@@ -47,6 +47,8 @@
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
+		<li><?php echo $this->Html->link(__('List Sales Infos'), array('controller' => 'sales_infos', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Sales Info'), array('controller' => 'sales_infos', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Customers'), array('controller' => 'customers', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Customer'), array('controller' => 'customers', 'action' => 'add')); ?></li>
 		<li><?php echo $this->Html->link(__('List Affiliations'), array('controller' => 'affiliations', 'action' => 'index')); ?> </li>

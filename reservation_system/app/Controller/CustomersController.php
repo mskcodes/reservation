@@ -1,5 +1,5 @@
 <?php
-App::uses('AnswersTicket' , 'AppController', 'Controller');
+App::uses('AppController', 'Controller');
 /**
  * Customers Controller
  *
@@ -21,66 +21,10 @@ class CustomersController extends AppController {
  *
  * @return void
  */
-	public function index($id = null) {
+	public function index() {
 		$this->Customer->recursive = 0;
 		$this->set('customers', $this->Paginator->paginate());
 	
-		//プルダウンのリスト
-		$selectKey = array(0 => '全体');
-		$selectKey += $this->Customer->Ticket->find('list');
-		$this->set('select', $selectKey);
-		if(isset($this->data['serch_tickets'][__('serch_tickets')])){
-				$id = (int)$this->data['serch_tickets'][__('serch_tickets')];
-				$this->set('id' , $id);
-		}
-		
-		//ソート
-		$this->set('total' , $this->Customer->find('all'));
-		
-		//ソートid無し
-		if($id == null || $id == 0){
-			
-			//Total		
-			$this->set('serch_total' , $this->Customer->find('count'));
-			
-			//項目参加
-			$options1 = array('conditions' => array('Customer.answer_id' => 1)); 
-			$res = $this->Customer->find('count', $options1);
-			$this->set('serch_answer1' , $res);
-			
-			//項目不参加
-			$options2 = array('conditions' => array('Customer.answer_id' => 2)); 
-			$res = $this->Customer->find('count', $options2);
-			$this->set('serch_answer2' , $res);
-			
-			//項目未定
-			$options3 = array('conditions' => array('Customer.answer_id' => 3)); 
-			$res = $this->Customer->find('count', $options3);
-			$this->set('serch_answer3' , $res);
-		}
-		
-		//ソートidあり
-		else{
-			$selecter = array('conditions' => array('Customer.ticket_id' => $id));
-
-			//Total
-			$this->set('serch_total' , $this->Customer->find('count' , $selecter));
-			
-			//項目参加
-			$options1 = array('conditions' => array('Customer.answer_id' => 1 , 'Customer.ticket_id' => $id)); 
-			$res = $this->Customer->find('count', $options1);
-			$this->set('serch_answer1' , $res);
-			
-			//項目不参加
-			$options2 = array('conditions' => array('Customer.answer_id' => 2 , 'Customer.ticket_id' => $id)); 
-			$res = $this->Customer->find('count', $options2);
-			$this->set('serch_answer2' , $res);
-			
-			//項目未定
-			$options3 = array('conditions' => array('Customer.answer_id' => 3 , 'Customer.ticket_id' => $id)); 
-			$res = $this->Customer->find('count', $options3);
-			$this->set('serch_answer3' , $res);
-		}		
 	}
 
 /**
@@ -115,16 +59,8 @@ class CustomersController extends AppController {
 		}
 		$affiliations = $this->Customer->Affiliation->find('list');
 		$primaries = $this->Customer->Primary->find('list');
-		$answers = $this->Customer->Answer->find('list');
-		$tickets = $this->Customer->Ticket->find('list');
 		$this->set(compact('affiliations', 'primaries', 'tickets' ,  'answers'));
 
-		$this->Customer->recursive = 0;
-		$this->set('customers', $this->Paginator->paginate());
-		$options = array();
-		$options = array('conditions' => array('Customer.answer_id' => 2)); 
-		$res = $this->Customer->find('all', $options);
-		$this->set('serch_answer' , $res);
 	}
 
 /**
@@ -150,18 +86,6 @@ class CustomersController extends AppController {
 			$this->request->data = $this->Customer->find('first', $options);
 		}
 		
-		$affiliations = $this->Customer->Affiliation->find('list');
-		$primaries = $this->Customer->Primary->find('list');
-		$answers = $this->Customer->Answer->find('list');
-		$tickets = $this->Customer->Ticket->find('list');
-		$this->set(compact('affiliations', 'primaries', 'tickets' , 'answers'));
-
-		$this->Customer->recursive = 0;
-		$this->set('customers', $this->Paginator->paginate());
-		$options = array();
-		$options = array('conditions' => array('Customer.answer_id' => 2)); 
-		$res = $this->Customer->find('all', $options);
-		$this->set('serch_answer' , $res);
 	}
 
 /**

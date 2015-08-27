@@ -12,9 +12,10 @@ class TicketFixture extends CakeTestFixture {
  */
 	public $fields = array(
 		'id' => array('type' => 'integer', 'null' => false, 'default' => null, 'unsigned' => false, 'key' => 'primary'),
-		'name' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 128, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
+		'ticket_name' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 128, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 		'stock' => array('type' => 'integer', 'null' => false, 'default' => null, 'unsigned' => false),
-		'issue' => array('type' => 'integer', 'null' => false, 'default' => null, 'unsigned' => false),
+		'customer_count' => array('type' => 'integer', 'null' => true, 'default' => null, 'unsigned' => false),
+		'sales_info_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'unsigned' => false),
 		'created' => array('type' => 'datetime', 'null' => false, 'default' => null),
 		'modified' => array('type' => 'datetime', 'null' => false, 'default' => null),
 		'indexes' => array(
@@ -31,11 +32,12 @@ class TicketFixture extends CakeTestFixture {
 	public $records = array(
 		array(
 			'id' => 1,
-			'name' => 'Lorem ipsum dolor sit amet',
+			'ticket_name' => 'Lorem ipsum dolor sit amet',
 			'stock' => 1,
-			'issue' => 1,
-			'created' => '2015-08-19 03:39:26',
-			'modified' => '2015-08-19 03:39:26'
+			'customer_count' => 1,
+			'sales_info_id' => 1,
+			'created' => '2015-08-27 11:42:58',
+			'modified' => '2015-08-27 11:42:58'
 		),
 	);
 
