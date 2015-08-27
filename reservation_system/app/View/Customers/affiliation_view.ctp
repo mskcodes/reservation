@@ -8,7 +8,7 @@
 		</dd>
 		<dt><?php echo __('Name'); ?></dt>
 		<dd>
-			<?php echo h($customer['Affiliation']['name']); ?>
+			<?php echo h($customer['Affiliation']['affiliation_name']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Name'); ?></dt>
@@ -28,6 +28,8 @@
 	<ul>
 		<li><?php echo $this->Html->link(__('Edit Affiliation'), array('controller' => 'affiliations', 'action' => 'edit', $customer['Affiliation']['id'])); ?> </li>
 		<li><?php echo $this->Form->postLink(__('Delete Affiliation'), array('controller' => 'affiliations', 'action' => 'delete', $customer['Affiliation']['id']), array(), __('Are you sure you want to delete # %s?', $customer['Affiliation']['id'])); ?> </li>
+		<li><?php echo $this->Html->link(__('List Sales Infos'), array('controller' => 'sales_infos', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Sales Info'), array('controller' => 'sales_infos', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Customers'), array('controller' => 'customers', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Customer'), array('controller' => 'customers', 'action' => 'add')); ?></li>
 		<li><?php echo $this->Html->link(__('List Affiliations'), array('controller' => 'affiliations', 'action' => 'index')); ?> </li>
@@ -56,13 +58,13 @@
 	<?php foreach ($customers as $customer): ?>
 		<tr>
 			<td><?php echo $customer['Customer']['id']; ?></td>
-			<td><?php echo h($customer['Ticket']['name']); ?></td>
-			<td><?php echo h($customer['Affiliation']['name']); ?></td>
-			<td><?php echo h($customer['Primary']['name']); ?></td>
+			<td><?php echo h($customer['Ticket']['ticket_name']); ?></td>
+			<td><?php echo h($customer['Affiliation']['affiliation_name']); ?></td>
+			<td><?php echo h($customer['Primary']['primary_name']); ?></td>
 			<td><?php echo $customer['Customer']['customer_name']; ?></td>
 			<td><?php echo $customer['Customer']['tel']; ?></td>
 			<td><?php echo $customer['Customer']['email']; ?></td>
-			<td><?php echo h($customer['Answer']['name']); ?></td>
+			<td><?php echo h($customer['Answer']['answer_name']); ?></td>
 			<td><?php echo $customer['Customer']['created']; ?></td>
 			<td><?php echo $customer['Customer']['modified']; ?></td>
 			<td class="actions">

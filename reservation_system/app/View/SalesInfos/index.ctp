@@ -1,32 +1,36 @@
-<div class="tickets index">
-	<h2><?php echo __('Tickets'); ?></h2>
+<div class="salesInfos index">
+	<h2><?php echo __('Sales Infos'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<thead>
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
-			<th><?php echo $this->Paginator->sort('ticket_name'); ?></th>
-			<th><?php echo $this->Paginator->sort('stock'); ?></th>
-			<th><?php echo $this->Paginator->sort(__('customer_count')); ?></th>
-			<th><?php echo $this->Paginator->sort(__('sales_info')); ?></th>
+			<th><?php echo $this->Paginator->sort('customer_id'); ?></th>
+			<th><?php echo $this->Paginator->sort('ticket_id'); ?></th>
+			<th><?php echo $this->Paginator->sort('answer_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('created'); ?></th>
 			<th><?php echo $this->Paginator->sort('modified'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	</thead>
 	<tbody>
-	<?php foreach ($tickets as $ticket): ?>
+	<?php foreach ($salesInfos as $salesInfo): ?>
 	<tr>
-		<td><?php echo h($ticket['Ticket']['id']); ?>&nbsp;</td>
-		<td><?php echo h($ticket['Ticket']['ticket_name']); ?>&nbsp;</td>
-		<td><?php echo h($ticket['Ticket']['stock']); ?>&nbsp;</td>
-		<td><?php echo h($ticket['Ticket']['customer_count']); ?>&nbsp;</td>
-		<td><?php echo h($ticket['Ticket']['sales_info']); ?>&nbsp;</td>
-		<td><?php echo h($ticket['Ticket']['created']); ?>&nbsp;</td>
-		<td><?php echo h($ticket['Ticket']['modified']); ?>&nbsp;</td>
+		<td><?php echo h($salesInfo['SalesInfo']['id']); ?>&nbsp;</td>
+		<td>
+			<?php echo $this->Html->link($salesInfo['Customer']['customer_name'], array('controller' => 'customers', 'action' => 'view', $salesInfo['Customer']['id'])); ?>
+		</td>
+		<td>
+			<?php echo $this->Html->link($salesInfo['Ticket']['ticket_name'], array('controller' => 'tickets', 'action' => 'view', $salesInfo['Ticket']['id'])); ?>
+		</td>
+		<td>
+			<?php echo $this->Html->link($salesInfo['Answer']['answer_name'], array('controller' => 'answers', 'action' => 'view', $salesInfo['Answer']['id'])); ?>
+		</td>
+		<td><?php echo h($salesInfo['SalesInfo']['created']); ?>&nbsp;</td>
+		<td><?php echo h($salesInfo['SalesInfo']['modified']); ?>&nbsp;</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('controller' => 'customers' , 'action' => 'ticket_view', $ticket['Ticket']['id'])); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $ticket['Ticket']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $ticket['Ticket']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $ticket['Ticket']['id']))); ?>
+			<?php echo $this->Html->link(__('View'), array('action' => 'view', $salesInfo['SalesInfo']['id'])); ?>
+			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $salesInfo['SalesInfo']['id'])); ?>
+			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $salesInfo['SalesInfo']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $salesInfo['SalesInfo']['id']))); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>

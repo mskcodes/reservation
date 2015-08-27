@@ -36,6 +36,46 @@ ShowTag=1
 ShowCommonAttributes=0
 
 [Relation]
+Entity1=primarys
+Entity2=customers
+RelationType1=2
+RelationType2=3
+Fields1=id
+Fields2=primary_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,4383,6482,2862,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=438
+Bar2=648
+Bar3=286
+TermPos1=R
+TermPos2=R
+
+[Relation]
+Entity1=affiliations
+Entity2=customers
+RelationType1=1
+RelationType2=3
+Fields1=id
+Fields2=affiliation_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,5871,6482,1724,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=587
+Bar2=648
+Bar3=172
+TermPos1=R
+TermPos2=R
+
+[Relation]
 Entity1=NEW_ENTITY2
 Entity2=sales_infos
 RelationType1=2
@@ -120,9 +160,9 @@ PName=NEW_ENTITY6
 LName=tickets
 Comment=
 TableOption=
-Page=Main
-Left=1100
-Top=800
+Page=MAIN
+Left=1150
+Top=750
 Field="id","id","int(11) auto_increment","NOT NULL",0,"","",$FFFFFFFF,""
 Field="name","name","varchar(128)","NOT NULL",,"","",$FFFFFFFF,""
 Field="stock","stock","int(11)","NOT NULL",,"","",$FFFFFFFF,""
@@ -133,16 +173,16 @@ Field="modified","modified","datetime","NOT NULL",,"","",$FFFFFFFF,""
 EffectMode=None
 Color=$000000
 BkColor=$FFFFFF
-Position="Main",1100,800
+Position="MAIN",1150,750
 
 [Entity]
 PName=NEW_ENTITY2
 LName=answers
 Comment=
 TableOption=
-Page=Main
-Left=1100
-Top=1050
+Page=MAIN
+Left=1150
+Top=1000
 Field="id","id","int(11) auto_increment","NOT NULL",0,"","",$FFFFFFFF,""
 Field="name","name","varchar(12)","NOT NULL",,"","",$FFFFFFFF,""
 Field="sales_info_id","sales_info_id","int(11)","NOT NULL",,"","",$FFFFFFFF,""
@@ -151,7 +191,7 @@ Field="modified","modified","datetime","NOT NULL",,"","",$FFFFFFFF,""
 EffectMode=None
 Color=$000000
 BkColor=$FFFFFF
-Position="Main",1100,1050
+Position="MAIN",1150,1000
 
 [Relation]
 Entity1=customers
@@ -170,46 +210,6 @@ LineMode=0
 Bar1=735
 Bar2=483
 Bar3=107
-TermPos1=R
-TermPos2=R
-
-[Relation]
-Entity1=customers
-Entity2=primarys
-RelationType1=2
-RelationType2=3
-Fields1=id
-Fields2=id
-Cardinarity1=
-Cardinarity2=
-Position="MAIN",0,2954,5862,3628,R,R
-Dependence=1
-Caption=
-PName=
-LineMode=0
-Bar1=295
-Bar2=586
-Bar3=363
-TermPos1=R
-TermPos2=R
-
-[Relation]
-Entity1=customers
-Entity2=affiliations
-RelationType1=2
-RelationType2=3
-Fields1=id
-Fields2=id
-Cardinarity1=
-Cardinarity2=
-Position="MAIN",0,1694,7188,5845,R,R
-Dependence=1
-Caption=
-PName=
-LineMode=0
-Bar1=169
-Bar2=719
-Bar3=584
 TermPos1=R
 TermPos2=R
 
@@ -258,8 +258,8 @@ LName=customers
 Comment=
 TableOption=
 Page=MAIN
-Left=1100
-Top=500
+Left=1150
+Top=450
 Field="id","id","int(11) auto_increment","NOT NULL",0,"","",$FFFFFFFF,""
 Field="affiliation_id","affiliation_id","int(11)",,,"","",$FFFFFFFF,""
 Field="primary_id","primary_id","int(11)","NOT NULL",,"","",$FFFFFFFF,""
@@ -273,7 +273,7 @@ EffectMode=None
 Color=$000000
 BkColor=$FFFFFF
 ModifiedDateTime=20150826151048
-Position="MAIN",1100,500,220,229
+Position="MAIN",1150,450,220,229
 
 [Entity]
 PName=primarys

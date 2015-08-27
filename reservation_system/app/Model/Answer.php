@@ -3,8 +3,8 @@ App::uses('AppModel', 'Model');
 /**
  * Answer Model
  *
- * @property Customer $Customer
- * @property Ticket $Ticket
+ * @property SalesInfo $SalesInfo
+ * @property SalesInfo $SalesInfo
  */
 class Answer extends AppModel {
 
@@ -13,7 +13,7 @@ class Answer extends AppModel {
  *
  * @var string
  */
-	public $displayField = 'name';
+	public $displayField = 'answer_name';
 
 /**
  * Validation rules
@@ -21,7 +21,7 @@ class Answer extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'name' => array(
+		'answer_name' => array(
 			'notEmpty' => array(
 				'rule' => array('notEmpty'),
 				//'message' => 'Your custom message here',
@@ -36,30 +36,38 @@ class Answer extends AppModel {
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
 
 /**
+ * belongsTo associations
+ *
+ * @var array
+ */
+	public $belongsTo = array(
+		'SalesInfo' => array(
+			'className' => 'SalesInfo',
+			'foreignKey' => 'sales_info_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		)
+	);
+
+/**
  * hasMany associations
  *
  * @var array
  */
-
-
-/**
- * hasAndBelongsToMany associations
- *
- * @var array
- */
-	public $hasAndBelongsToMany = array(
-		'Sales_info' => array(
-			'className' => 'Sales_info',
-			'joinTable' => 'sales_infos',
+	public $hasMany = array(
+		'SalesInfo' => array(
+			'className' => 'SalesInfo',
 			'foreignKey' => 'answer_id',
-			'associationForeignKey' => 'sales_info_id',
-			'unique' => 'keepExisting',
+			'dependent' => false,
 			'conditions' => '',
 			'fields' => '',
 			'order' => '',
 			'limit' => '',
 			'offset' => '',
+			'exclusive' => '',
 			'finderQuery' => '',
+			'counterQuery' => ''
 		)
 	);
 

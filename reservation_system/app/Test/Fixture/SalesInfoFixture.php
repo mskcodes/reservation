@@ -34,8 +34,8 @@ class SalesInfoFixture extends CakeTestFixture {
 			'customer_id' => 1,
 			'ticket_id' => 1,
 			'answer_id' => 1,
-			'created' => '2015-08-26 14:57:24',
-			'modified' => '2015-08-26 14:57:24'
+			'created' => '2015-08-27 11:43:23',
+			'modified' => '2015-08-27 11:43:23'
 		),
 	);
 

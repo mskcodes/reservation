@@ -10,8 +10,7 @@
 			<th><?php echo $this->Paginator->sort('customer_name'); ?></th>
 			<th><?php echo $this->Paginator->sort('tel'); ?></th>
 			<th><?php echo $this->Paginator->sort('email'); ?></th>
-			<!--<th><?php echo $this->Paginator->sort('ticket_id'); ?></th>
-			<th><?php echo $this->Paginator->sort('answer_id'); ?></th>-->
+			<th><?php echo $this->Paginator->sort('sales_info_id'); ?></th>-->
 			<th><?php echo $this->Paginator->sort('created'); ?></th>
 			<th><?php echo $this->Paginator->sort('modified'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
@@ -22,19 +21,16 @@
 	<tr>
 		<td><?php echo h($customer['Customer']['id']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($customer['Affiliation']['name'], array('controller' => 'customers', 'action' => 'affiliation_view', $customer['Affiliation']['id'])); ?>
+			<?php echo $this->Html->link($customer['Affiliation']['affiliation_name'], array('controller' => 'customers', 'action' => 'affiliation_view', $customer['Affiliation']['id'])); ?>
 		</td>
 		<td>
-			<?php echo $this->Html->link($customer['Primary']['name'], array('controller' => 'primaries', 'action' => 'view', $customer['Primary']['id'])); ?>
+			<?php echo $this->Html->link($customer['Primary']['primary_name'], array('controller' => 'primaries', 'action' => 'view', $customer['Primary']['id'])); ?>
 		</td>
 		<td><?php echo h($customer['Customer']['customer_name']); ?>&nbsp;</td>
 		<td><?php echo h($customer['Customer']['tel']); ?>&nbsp;</td>
 		<td><?php echo h($customer['Customer']['email']); ?>&nbsp;</td>
-		<!--<td>
-			<?php echo $this->Html->link($customer['Ticket']['name'], array('controller' => 'customers', 'action' => 'ticket_view', $customer['Ticket']['id'])); ?>
-		</td>
 		<td>
-			<?php echo $this->Html->link($customer['Answer']['name'], array('controller' => 'customers', 'action' => 'answer_view', $customer['Answer']['id'])); ?>
+			<?php echo $this->Html->link($customer['Customer']['sales_info_id'], array('controller' => 'customers', 'action' => 'answer_view', $customer['Answer']['id'])); ?>
 		</td>-->
 		<td><?php echo h($customer['Customer']['created']); ?>&nbsp;</td>
 		<td><?php echo h($customer['Customer']['modified']); ?>&nbsp;</td>
@@ -84,6 +80,8 @@
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
+		<li><?php echo $this->Html->link(__('List Sales Infos'), array('controller' => 'sales_infos', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Sales Info'), array('controller' => 'sales_infos', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Customers'), array('controller' => 'customers', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Customer'), array('controller' => 'customers', 'action' => 'add')); ?></li>
 		<li><?php echo $this->Html->link(__('List Affiliations'), array('controller' => 'affiliations', 'action' => 'index')); ?> </li>

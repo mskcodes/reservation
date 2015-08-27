@@ -3,7 +3,8 @@ App::uses('AppModel', 'Model');
 /**
  * Ticket Model
  *
- * @property Customer $Customer
+ * @property SalesInfo $SalesInfo
+ * @property SalesInfo $SalesInfo
  */
 class Ticket extends AppModel {
 
@@ -12,7 +13,7 @@ class Ticket extends AppModel {
  *
  * @var string
  */
-	public $displayField = 'name';
+	public $displayField = 'ticket_name';
 
 /**
  * Validation rules
@@ -20,7 +21,7 @@ class Ticket extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'name' => array(
+		'ticket_name' => array(
 			'notEmpty' => array(
 				'rule' => array('notEmpty'),
 				//'message' => 'Your custom message here',
@@ -40,40 +41,44 @@ class Ticket extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'customer_count' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
 	);
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
+
+/**
+ * belongsTo associations
+ *
+ * @var array
+ */
+	public $belongsTo = array(
+		'SalesInfo' => array(
+			'className' => 'SalesInfo',
+			'foreignKey' => 'sales_info_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		)
+	);
 
 /**
  * hasMany associations
  *
  * @var array
  */
- 	public $hasAndBelongsToMany = array(
-		'Sales_info' => array(
-			'className' => 'Sales_info',
-			'joinTable' => 'sales_infos',
+	public $hasMany = array(
+		'SalesInfo' => array(
+			'className' => 'SalesInfo',
 			'foreignKey' => 'ticket_id',
-			'associationForeignKey' => 'sales_info_id',
-			'unique' => 'keepExisting',
+			'dependent' => false,
 			'conditions' => '',
 			'fields' => '',
 			'order' => '',
 			'limit' => '',
 			'offset' => '',
+			'exclusive' => '',
 			'finderQuery' => '',
+			'counterQuery' => ''
 		)
 	);
-	
-	
+
 }

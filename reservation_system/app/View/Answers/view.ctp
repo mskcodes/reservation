@@ -8,7 +8,7 @@
 		</dd>
 		<dt><?php echo __('Type'); ?></dt>
 		<dd>
-			<?php echo h($answer['Answer']['name']); ?>
+			<?php echo h($answer['Answer']['answer_name']); ?>
 			&nbsp;
 		</dd>
 	</dl>
@@ -18,6 +18,8 @@
 	<ul>
 		<li><?php echo $this->Html->link(__('Edit Answer'), array('action' => 'edit', $answer['Answer']['id'])); ?> </li>
 		<li><?php echo $this->Form->postLink(__('Delete Answer'), array('action' => 'delete', $answer['Answer']['id']), array(), __('Are you sure you want to delete # %s?', $answer['Answer']['id'])); ?> </li>
+		<li><?php echo $this->Html->link(__('List Sales Infos'), array('controller' => 'sales_infos', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Sales Info'), array('controller' => 'sales_infos', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Customers'), array('controller' => 'customers', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Customer'), array('controller' => 'customers', 'action' => 'add')); ?></li>
 		<li><?php echo $this->Html->link(__('List Affiliations'), array('controller' => 'affiliations', 'action' => 'index')); ?> </li>
@@ -39,7 +41,7 @@
 		<th><?php echo __('Customer Name'); ?></th>
 		<th><?php echo __('Tel'); ?></th>
 		<th><?php echo __('Email'); ?></th>
-		<th><?php echo __('Answer Id'); ?></th>
+		<th><?php echo __('sales info Id'); ?></th>
 		<th><?php echo __('Created'); ?></th>
 		<th><?php echo __('Modified'); ?></th>
 		<th class="actions"><?php echo __('Actions'); ?></th>
@@ -52,7 +54,7 @@
 			<td><?php echo $customer['customer_name']; ?></td>
 			<td><?php echo $customer['tel']; ?></td>
 			<td><?php echo $customer['email']; ?></td>
-			<td><?php echo $customer['answer_id']; ?></td>
+			<td><?php echo $customer['sales_info_id']; ?></td>
 			<td><?php echo $customer['created']; ?></td>
 			<td><?php echo $customer['modified']; ?></td>
 			<td class="actions">

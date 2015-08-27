@@ -1,5 +1,5 @@
 <?php
-App::uses('AnswersTicket' , 'AppController', 'Controller');
+App::uses('AppController', 'Controller');
 /**
  * Customers Controller
  *
@@ -25,9 +25,10 @@ class CustomersController extends AppController {
 		$this->Customer->recursive = 0;
 		$this->set('customers', $this->Paginator->paginate());
 	
+		/*
 		//プルダウンのリスト
 		$selectKey = array(0 => '全体');
-		$selectKey += $this->Customer->Ticket->find('list');
+		$selectKey += $this->Customer->SalesInfo->find('list');
 		$this->set('select', $selectKey);
 		if(isset($this->data['serch_tickets'][__('serch_tickets')])){
 				$id = (int)$this->data['serch_tickets'][__('serch_tickets')];
@@ -44,7 +45,7 @@ class CustomersController extends AppController {
 			$this->set('serch_total' , $this->Customer->find('count'));
 			
 			//項目参加
-			$options1 = array('conditions' => array('Customer.answer_id' => 1)); 
+			$options1 = array('conditions' => array('Customer.' . $this->Customer->SalesInfo => 1)); 
 			$res = $this->Customer->find('count', $options1);
 			$this->set('serch_answer1' , $res);
 			
@@ -80,7 +81,7 @@ class CustomersController extends AppController {
 			$options3 = array('conditions' => array('Customer.answer_id' => 3 , 'Customer.ticket_id' => $id)); 
 			$res = $this->Customer->find('count', $options3);
 			$this->set('serch_answer3' , $res);
-		}		
+		}*/
 	}
 
 /**
@@ -115,16 +116,16 @@ class CustomersController extends AppController {
 		}
 		$affiliations = $this->Customer->Affiliation->find('list');
 		$primaries = $this->Customer->Primary->find('list');
-		$answers = $this->Customer->Answer->find('list');
-		$tickets = $this->Customer->Ticket->find('list');
+		//$answers = $this->Customer->Answer->find('list');
+		//$tickets = $this->Customer->Ticket->find('list');
 		$this->set(compact('affiliations', 'primaries', 'tickets' ,  'answers'));
-
+/*
 		$this->Customer->recursive = 0;
 		$this->set('customers', $this->Paginator->paginate());
 		$options = array();
 		$options = array('conditions' => array('Customer.answer_id' => 2)); 
 		$res = $this->Customer->find('all', $options);
-		$this->set('serch_answer' , $res);
+		$this->set('serch_answer' , $res);*/
 	}
 
 /**
@@ -152,9 +153,8 @@ class CustomersController extends AppController {
 		
 		$affiliations = $this->Customer->Affiliation->find('list');
 		$primaries = $this->Customer->Primary->find('list');
-		$answers = $this->Customer->Answer->find('list');
-		$tickets = $this->Customer->Ticket->find('list');
-		$this->set(compact('affiliations', 'primaries', 'tickets' , 'answers'));
+		$sales_infos = $this->Customer->SalesInfo->find('list');
+		$this->set(compact('affiliations', 'primaries' , 'sales_infos'));
 
 		$this->Customer->recursive = 0;
 		$this->set('customers', $this->Paginator->paginate());

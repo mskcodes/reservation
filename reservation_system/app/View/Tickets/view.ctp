@@ -8,7 +8,7 @@
 		</dd>
 		<dt><?php echo __('Name'); ?></dt>
 		<dd>
-			<?php echo h($ticket['Ticket']['name']); ?>
+			<?php echo h($ticket['Ticket']['ticket_name']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Stock'); ?></dt>
@@ -19,6 +19,11 @@
 		<dt><?php echo __('Issue'); ?></dt>
 		<dd>
 			<?php echo h($ticket['Ticket']['customer_count']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('sales_info'); ?></dt>
+		<dd>
+			<?php echo h($ticket['Ticket']['sales_info']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Created'); ?></dt>
@@ -38,10 +43,14 @@
 	<ul>
 		<li><?php echo $this->Html->link(__('Edit Ticket'), array('action' => 'edit', $ticket['Ticket']['id'])); ?> </li>
 		<li><?php echo $this->Form->postLink(__('Delete Ticket'), array('action' => 'delete', $ticket['Ticket']['id']), array(), __('Are you sure you want to delete # %s?', $ticket['Ticket']['id'])); ?> </li>
+		<li><?php echo $this->Html->link(__('List Sales Infos'), array('controller' => 'sales_infos', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Sales Info'), array('controller' => 'sales_infos', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Customers'), array('controller' => 'customers', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Customer'), array('controller' => 'customers', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Tickets'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Ticket'), array('action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Customer'), array('controller' => 'customers', 'action' => 'add')); ?></li>
+		<li><?php echo $this->Html->link(__('List Affiliations'), array('controller' => 'affiliations', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Affiliation'), array('controller' => 'affiliations', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Tickets'), array('controller' => 'tickets', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Ticket'), array('controller' => 'tickets', 'action' => 'add')); ?></li>	
 	</ul>
 </div>
 <div class="related">
@@ -56,7 +65,7 @@
 		<th><?php echo __('Customer Name'); ?></th>
 		<th><?php echo __('Tel'); ?></th>
 		<th><?php echo __('Email'); ?></th>
-		<th><?php echo __('Answer Id'); ?></th>
+		<th><?php echo __('SalesInfo Id'); ?></th>
 		<th><?php echo __('Created'); ?></th>
 		<th><?php echo __('Modified'); ?></th>
 		<th class="actions"><?php echo __('Actions'); ?></th>
@@ -64,13 +73,13 @@
 	<?php foreach ($ticket['Customer'] as $customer): ?>
 		<tr>
 			<td><?php echo $customer['id']; ?></td>
-			<td><?php echo h($ticket['Ticket']['name']); ?></td>
+			<td><?php echo h($ticket['Ticket']['ticket_name']); ?></td>
 			<td><?php echo $customer['affiliation_id']; ?></td>
 			<td><?php echo $customer['primary_id']; ?></td>
 			<td><?php echo $customer['customer_name']; ?></td>
 			<td><?php echo $customer['tel']; ?></td>
 			<td><?php echo $customer['email']; ?></td>
-			<td><?php echo $customer['answer_id']; ?></td>
+			<td><?php echo $customer['sales_info_id']; ?></td>
 			<td><?php echo $customer['created']; ?></td>
 			<td><?php echo $customer['modified']; ?></td>
 			<td class="actions">
