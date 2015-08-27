@@ -162,7 +162,7 @@ Comment=
 TableOption=
 Page=MAIN
 Left=1150
-Top=750
+Top=900
 Field="id","id","int(11) auto_increment","NOT NULL",0,"","",$FFFFFFFF,""
 Field="name","name","varchar(128)","NOT NULL",,"","",$FFFFFFFF,""
 Field="stock","stock","int(11)","NOT NULL",,"","",$FFFFFFFF,""
@@ -173,7 +173,7 @@ Field="modified","modified","datetime","NOT NULL",,"","",$FFFFFFFF,""
 EffectMode=None
 Color=$000000
 BkColor=$FFFFFF
-Position="MAIN",1150,750
+Position="MAIN",1150,900
 
 [Entity]
 PName=NEW_ENTITY2
@@ -182,7 +182,7 @@ Comment=
 TableOption=
 Page=MAIN
 Left=1150
-Top=1000
+Top=1250
 Field="id","id","int(11) auto_increment","NOT NULL",0,"","",$FFFFFFFF,""
 Field="name","name","varchar(12)","NOT NULL",,"","",$FFFFFFFF,""
 Field="sales_info_id","sales_info_id","int(11)","NOT NULL",,"","",$FFFFFFFF,""
@@ -191,7 +191,7 @@ Field="modified","modified","datetime","NOT NULL",,"","",$FFFFFFFF,""
 EffectMode=None
 Color=$000000
 BkColor=$FFFFFF
-Position="MAIN",1150,1000
+Position="MAIN",1150,1250
 
 [Relation]
 Entity1=customers

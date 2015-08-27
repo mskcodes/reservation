@@ -791,7 +791,33 @@ msgstr "参加者数"
 msgid "Related Tickets"
 msgstr "関連チケット"
 
+msgid "Sales Infos"
+msgstr "売上情報リスト"
+
+msgid "List Sales Infos"
+msgstr "売上情報リスト"
+
+msgid ""New Sales Info
+msgstr "売上情報追加"
+
+msgid "Sales Info"
+msgstr "売上情報"
+
+msgid "Edit Sales Info"
+msgstr "売上情報編集"
+
+msgid "Delete Sales Info"
+msgstr "売上情報削除"
+
 msgid ""
 msgstr ""
 
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
 

@@ -7,7 +7,6 @@
 			<th><?php echo $this->Paginator->sort('ticket_name'); ?></th>
 			<th><?php echo $this->Paginator->sort('stock'); ?></th>
 			<th><?php echo $this->Paginator->sort(__('customer_count')); ?></th>
-			<th><?php echo $this->Paginator->sort(__('sales_info')); ?></th>
 			<th><?php echo $this->Paginator->sort('created'); ?></th>
 			<th><?php echo $this->Paginator->sort('modified'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
@@ -20,7 +19,6 @@
 		<td><?php echo h($ticket['Ticket']['ticket_name']); ?>&nbsp;</td>
 		<td><?php echo h($ticket['Ticket']['stock']); ?>&nbsp;</td>
 		<td><?php echo h($ticket['Ticket']['customer_count']); ?>&nbsp;</td>
-		<td><?php echo h($ticket['Ticket']['sales_info']); ?>&nbsp;</td>
 		<td><?php echo h($ticket['Ticket']['created']); ?>&nbsp;</td>
 		<td><?php echo h($ticket['Ticket']['modified']); ?>&nbsp;</td>
 		<td class="actions">

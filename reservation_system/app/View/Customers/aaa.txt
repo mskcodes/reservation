@@ -1,0 +1,23 @@
+		<?php echo $this->Form->create('serch_tickets'); ?>
+		<?php
+			echo $this->Form->input(__('serch_tickets'), array(
+					'action' => '',
+					'type' => 'select', 
+					'options' => $select,
+				));
+			echo $this->Form->end(__('Submit'));
+		?>
+	<dl>
+		<dt><?php echo __('Join Total'); ?></dt>
+		<dd><?php echo $serch_answer2; ?></dd>
+		<dt><?php echo __('UnJoin Total'); ?></dt>
+		<dd><?php echo $serch_answer3; ?></dd>
+		<dt><?php echo __('Un Total'); ?></dt>
+		<dd><?php echo $serch_answer1; ?></dd>
+		<dt><?php echo __('Total'); ?></dt>
+		<dd><?php echo $serch_total; ?></dd>
+	</dl>
+
+
+
+

@@ -44,13 +44,12 @@
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
 		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Ticket Id'); ?></th>
 		<th><?php echo __('Affiliation Id'); ?></th>
 		<th><?php echo __('Primary Id'); ?></th>
 		<th><?php echo __('Customer Name'); ?></th>
 		<th><?php echo __('Tel'); ?></th>
 		<th><?php echo __('Email'); ?></th>
-		<th><?php echo __('Answer Id'); ?></th>
+		<th><?php echo __('SalesInfo Id'); ?></th>
 		<th><?php echo __('Created'); ?></th>
 		<th><?php echo __('Modified'); ?></th>
 		<th class="actions"><?php echo __('Actions'); ?></th>
@@ -58,13 +57,12 @@
 	<?php foreach ($customers as $customer): ?>
 		<tr>
 			<td><?php echo $customer['Customer']['id']; ?></td>
-			<td><?php echo h($customer['Ticket']['ticket_name']); ?></td>
 			<td><?php echo h($customer['Affiliation']['affiliation_name']); ?></td>
 			<td><?php echo h($customer['Primary']['primary_name']); ?></td>
 			<td><?php echo $customer['Customer']['customer_name']; ?></td>
 			<td><?php echo $customer['Customer']['tel']; ?></td>
 			<td><?php echo $customer['Customer']['email']; ?></td>
-			<td><?php echo h($customer['Answer']['answer_name']); ?></td>
+			<td><?php echo h($customer['Customer']['sales_info_id']); ?></td>
 			<td><?php echo $customer['Customer']['created']; ?></td>
 			<td><?php echo $customer['Customer']['modified']; ?></td>
 			<td class="actions">

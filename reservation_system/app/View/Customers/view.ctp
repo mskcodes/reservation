@@ -1,4 +1,4 @@
-<?php var_dump($customer); ?>
+<?php //var_dump($customer); ?>
 <div class="customers view">
 <h2><?php echo __('Customer'); ?></h2>
 	<dl>
@@ -30,11 +30,6 @@
 		<dt><?php echo __('Email'); ?></dt>
 		<dd>
 			<?php echo h($customer['Customer']['email']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('SalesInfo'); ?></dt>
-		<dd>
-			<?php echo $this->Html->link($customer['Customer']['sales_info_id'], array('controller' => 'answers', 'action' => 'view', $customer['Answer']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Created'); ?></dt>

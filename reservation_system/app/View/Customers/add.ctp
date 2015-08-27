@@ -8,7 +8,6 @@
 		echo $this->Form->input('customer_name');
 		echo $this->Form->input('tel');
 		echo $this->Form->input('email');
-		echo $this->Form->input('sales_info_id');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>

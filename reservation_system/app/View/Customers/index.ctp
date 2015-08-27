@@ -10,7 +10,7 @@
 			<th><?php echo $this->Paginator->sort('customer_name'); ?></th>
 			<th><?php echo $this->Paginator->sort('tel'); ?></th>
 			<th><?php echo $this->Paginator->sort('email'); ?></th>
-			<th><?php echo $this->Paginator->sort('sales_info_id'); ?></th>-->
+			<th><?php echo $this->Paginator->sort('sales_info_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('created'); ?></th>
 			<th><?php echo $this->Paginator->sort('modified'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
@@ -31,7 +31,7 @@
 		<td><?php echo h($customer['Customer']['email']); ?>&nbsp;</td>
 		<td>
 			<?php echo $this->Html->link($customer['Customer']['sales_info_id'], array('controller' => 'customers', 'action' => 'answer_view', $customer['Answer']['id'])); ?>
-		</td>-->
+		</td>
 		<td><?php echo h($customer['Customer']['created']); ?>&nbsp;</td>
 		<td><?php echo h($customer['Customer']['modified']); ?>&nbsp;</td>
 		<td class="actions">
@@ -41,26 +41,6 @@
 		</td>
 	</tr>
 <?php endforeach; ?>
-		<?php echo $this->Form->create('serch_tickets'); ?>
-		<?php
-			echo $this->Form->input(__('serch_tickets'), array(
-					'action' => '',
-					'type' => 'select', 
-					'options' => $select,
-				));
-			echo $this->Form->end(__('Submit'));
-		?>
-	<dl>
-		<dt><?php echo __('Join Total'); ?></dt>
-		<dd><?php echo $serch_answer2; ?></dd>
-		<dt><?php echo __('UnJoin Total'); ?></dt>
-		<dd><?php echo $serch_answer3; ?></dd>
-		<dt><?php echo __('Un Total'); ?></dt>
-		<dd><?php echo $serch_answer1; ?></dd>
-		<dt><?php echo __('Total'); ?></dt>
-		<dd><?php echo $serch_total; ?></dd>
-	</dl>
-
 	</tbody>
 	</table>
 	<p>
