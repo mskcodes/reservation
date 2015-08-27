@@ -1,4 +1,4 @@
-<?php vat_dump($customer); ?>
+
 <div class="customers index">
 	<h2><?php echo __('Customers'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
