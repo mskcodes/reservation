@@ -22,7 +22,7 @@ class CustomersController extends AppController {
  * @return void
  */
 	public function index() {
-		$this->Customer->recursive = 0;
+		$this->Customer->recursive = 3;
 		$this->set('customers', $this->Paginator->paginate());
 	
 	}

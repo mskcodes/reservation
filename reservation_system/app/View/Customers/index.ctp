@@ -30,7 +30,12 @@
 		<td><?php echo h($customer['Customer']['tel']); ?>&nbsp;</td>
 		<td><?php echo h($customer['Customer']['email']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($customer['Customer']['sales_info_id'], array('controller' => 'customers', 'action' => 'answer_view', $customer['Answer']['id'])); ?>
+			<?php if(!empty($customer['Customer']['sales_info_id'])){
+					echo $this->Html->link("there", array('controller' => 'customers', 'action' => 'answer_view', $customer['SalesInfo']['answer_id']));
+				}else{
+					echo "";
+				}
+			 ?>
 		</td>
 		<td><?php echo h($customer['Customer']['created']); ?>&nbsp;</td>
 		<td><?php echo h($customer['Customer']['modified']); ?>&nbsp;</td>

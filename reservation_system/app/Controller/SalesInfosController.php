@@ -118,12 +118,8 @@ class SalesInfosController extends AppController {
 		$tickets = $this->SalesInfo->Ticket->find('list');
 		$answers = $this->SalesInfo->Answer->find('list');
 		$this->set(compact('customers', 'tickets', 'answers'));
-		
-		
-		$affiliations = $this->SalesInfo->Affiliation->find('list');
-		$primaries = $this->SalesInfo->Primary->find('list');
-		$answers = $this->SalesInfo->Answer->find('list');
-		$tickets = $this->SalesInfo->Ticket->find('list');
+		//$affiliations = $this->SalesInfo->Affiliation->find('list');
+		//$primaries = $this->SalesInfo->Primary->find('list');
 		$this->set(compact('affiliations', 'primaries', 'tickets' ,  'answers'));
 /*
 		$this->Customer->recursive = 0;
