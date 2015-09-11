@@ -21,7 +21,7 @@
 	<tr>
 		<td><?php echo h($customer['Customer']['id']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($customer['Affiliation']['affiliation_name'], array('controller' => 'customers', 'action' => 'affiliation_view', $customer['Affiliation']['id'])); ?>
+			<?php echo $this->Html->link($customer['Affiliation']['affiliation_name'], array('controller' => 'affiliations', 'action' => 'view', $customer['Affiliation']['id'])); ?>
 		</td>
 		<td>
 			<?php echo $this->Html->link($customer['Primary']['primary_name'], array('controller' => 'primaries', 'action' => 'view', $customer['Primary']['id'])); ?>

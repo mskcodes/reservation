@@ -794,12 +794,6 @@ msgstr "関連チケット"
 msgid "Sales Infos"
 msgstr "売上情報リスト"
 
-msgid "List Sales Infos"
-msgstr "売上情報リスト"
-
-msgid ""New Sales Info
-msgstr "売上情報追加"
-
 msgid "Sales Info"
 msgstr "売上情報"
 
@@ -823,6 +817,30 @@ msgstr "売上情報作成日"
 
 msgid "SalesModified"
 msgstr "売上情報更新日"
+
+msgid "Add Sales Info"
+msgstr "売上情報追加"
+
+msgid "affiliation_name"
+msgstr "売上情報"
+
+msgid "List Sales Infos"
+msgstr "売上情報リスト"
+
+msgid "New Sales Info"
+msgstr "売上情報追加"
+
+msgid "affiliation_name"
+msgstr "所属名"
+
+msgid "Affiliation Name"
+msgstr "所属名"
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
 
 msgid ""
 msgstr ""
