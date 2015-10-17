@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="AbstractPasswordHasher.php" server="saihe.sakura.ne.jp/www/" local="130861530524160800" remote="130888295400000000" />
+<file name="ActionsAuthorize.php" server="saihe.sakura.ne.jp/www/" local="130861530524300812" remote="130888295400000000" />
+<file name="BaseAuthenticate.php" server="saihe.sakura.ne.jp/www/" local="130861530524380817" remote="130888295400000000" />
+<file name="BaseAuthorize.php" server="saihe.sakura.ne.jp/www/" local="130861530524440820" remote="130888295400000000" />
+<file name="BasicAuthenticate.php" server="saihe.sakura.ne.jp/www/" local="130861530524500820" remote="130888295400000000" />
+<file name="BlowfishAuthenticate.php" server="saihe.sakura.ne.jp/www/" local="130861530524540821" remote="130888295400000000" />
+<file name="BlowfishPasswordHasher.php" server="saihe.sakura.ne.jp/www/" local="130861530524690837" remote="130888295400000000" />
+<file name="ControllerAuthorize.php" server="saihe.sakura.ne.jp/www/" local="130861530524730845" remote="130888295400000000" />
+<file name="CrudAuthorize.php" server="saihe.sakura.ne.jp/www/" local="130861530524790848" remote="130888295400000000" />
+<file name="DigestAuthenticate.php" server="saihe.sakura.ne.jp/www/" local="130861530524850855" remote="130888295400000000" />
+<file name="FormAuthenticate.php" server="saihe.sakura.ne.jp/www/" local="130861530524900857" remote="130888295400000000" />
+<file name="SimplePasswordHasher.php" server="saihe.sakura.ne.jp/www/" local="130861530524950859" remote="130888295400000000" />
+</dwsync>
