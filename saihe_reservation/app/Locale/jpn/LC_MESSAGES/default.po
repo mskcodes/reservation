@@ -1,0 +1,847 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/AffiliationsController.php:38;70;95
+msgid "Invalid affiliation"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/AffiliationsController.php:53;74
+msgid "The affiliation has been saved."
+msgstr "所属が保存されました。"
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/AffiliationsController.php:56;77
+msgid "The affiliation could not be saved. Please, try again."
+msgstr "所属が保存できませんでした。もう一度やり直してください。"
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/AffiliationsController.php:99
+msgid "The affiliation has been deleted."
+msgstr "所属が削除されました"
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/AffiliationsController.php:101
+msgid "The affiliation could not be deleted. Please, try again."
+msgstr "所属が削除できませんでした。もう一度やり直して下さい。"
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/AnswersController.php:38;70;95
+msgid "Invalid answer"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/AnswersController.php:53;74
+msgid "The answer has been saved."
+msgstr "返答が保存されました。"
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/AnswersController.php:56;77
+msgid "The answer could not be saved. Please, try again."
+msgstr "返答が保存できませんでした。もう一度やり直してください。"
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/AnswersController.php:99
+msgid "The answer has been deleted."
+msgstr "返答が削除されました。"
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/AnswersController.php:101
+msgid "The answer could not be deleted. Please, try again."
+msgstr "返答が削除できませんでした。もう一度やり直してください。"
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/CustomersController.php:38;74;103
+msgid "Invalid customer"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/CustomersController.php:53;78
+msgid "The customer has been saved."
+msgstr "顧客が保存されました。"
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/CustomersController.php:56;81
+msgid "The customer could not be saved. Please, try again."
+msgstr "顧客が保存できませんでした。もう一度やり直してください。"
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/CustomersController.php:107
+msgid "The customer has been deleted."
+msgstr "顧客が削除されました。"
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/CustomersController.php:109
+msgid "The customer could not be deleted. Please, try again."
+msgstr "顧客が保存できませんでした。もう一度やり直してください。"
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/PrimariesController.php:38;70;95
+msgid "Invalid primary"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/PrimariesController.php:53;74
+msgid "The primary has been saved."
+msgstr "種別が保存されました。"
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/PrimariesController.php:56;77
+msgid "The primary could not be saved. Please, try again."
+msgstr "種別が保存できませんでした。もう一度やり直してください。"
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/PrimariesController.php:99
+msgid "The primary has been deleted."
+msgstr "種別が削除されました。"
+
+#: C:/xampp/htdocs/reservation_system/app/Controller/PrimariesController.php:101
+msgid "The primary could not be deleted. Please, try again."
+msgstr "種別が保存できませんでした。もう一度やり直してください。"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/add.ctp:4
+msgid "Add Affiliation"
+msgstr "所属を追加"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/add.ctp:9
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/edit.ctp:10
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/add.ctp:9
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/edit.ctp:10
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/add.ctp:14
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/edit.ctp:15
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/add.ctp:9
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/edit.ctp:10
+msgid "Submit"
+msgstr "決定"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/add.ctp:12
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/edit.ctp:13
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/index.ctp:8;40
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:17;41
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/add.ctp:12
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/edit.ctp:13
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/index.ctp:8;40
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:17;41
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/add.ctp:17
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/edit.ctp:18
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/index.ctp:15;60
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:52
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/add.ctp:12
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/edit.ctp:13
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/index.ctp:8;40
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:17;41
+msgid "Actions"
+msgstr "メニュー"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/add.ctp:15
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/edit.ctp:17
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:21
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/add.ctp:21
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/edit.ctp:23
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/index.ctp:63
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:58
+msgid "List Affiliations"
+msgstr "所属リスト"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/add.ctp:16
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/edit.ctp:18
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/index.ctp:43
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:23
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/add.ctp:16
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/edit.ctp:18
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/index.ctp:43
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:23
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/add.ctp:20
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/edit.ctp:22
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:56
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/add.ctp:16
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/edit.ctp:18
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/index.ctp:43
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:23
+msgid "List Customers"
+msgstr "顧客リスト"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/add.ctp:17
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/edit.ctp:19
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/index.ctp:44
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:24;66
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/add.ctp:17
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/edit.ctp:19
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/index.ctp:44
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:24;66
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/index.ctp:62
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:57
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/add.ctp:17
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/edit.ctp:19
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/index.ctp:44
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:24;66
+msgid "New Customer"
+msgstr "顧客追加"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/edit.ctp:4
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:19
+msgid "Edit Affiliation"
+msgstr "所属編集"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/edit.ctp:16
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/index.ctp:19
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:57
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/edit.ctp:16
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/index.ctp:19
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:57
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/edit.ctp:21
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/index.ctp:39
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/edit.ctp:16
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/index.ctp:19
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:57
+msgid "Delete"
+msgstr "削除"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/edit.ctp:16
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/index.ctp:19
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:20;57
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/edit.ctp:16
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/index.ctp:19
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:20;57
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/edit.ctp:21
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/index.ctp:39
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:55
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/edit.ctp:16
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/index.ctp:19
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:20;57
+msgid "Are you sure you want to delete # %s?"
+msgstr "本当に削除しますか？"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/index.ctp:2
+msgid "Affiliations"
+msgstr "所属"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/index.ctp:17
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:55
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/index.ctp:17
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:55
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/index.ctp:37
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/index.ctp:17
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:55
+msgid "View"
+msgstr "詳細"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/index.ctp:18
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:56
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/index.ctp:18
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:56
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/index.ctp:38
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/index.ctp:18
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:56
+msgid "Edit"
+msgstr "編集"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/index.ctp:28
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/index.ctp:28
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/index.ctp:48
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/index.ctp:28
+msgid "Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}"
+msgstr "ページ {:page} / {:pages}, レコード {:current} / {:count} 件 ,  {:start} から {:end} まで"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/index.ctp:33
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/index.ctp:33
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/index.ctp:53
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/index.ctp:33
+msgid "previous"
+msgstr "前のページ"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/index.ctp:35
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/index.ctp:35
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/index.ctp:55
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/index.ctp:35
+msgid "next"
+msgstr "次のページ"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/index.ctp:42
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:22
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/add.ctp:22
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/edit.ctp:24
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/index.ctp:64
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:59
+msgid "New Affiliation"
+msgstr "所属追加"
+
+
+msgid "Affiliation_type"
+msgstr "所属別"
+
+msgid "Answer_type"
+msgstr "返答別"
+
+msgid "Other Affiliations"
+msgstr "他所属"
+
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:2
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:9
+msgid "Affiliation"
+msgstr "所属詳細"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:4;32
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:4;32
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:4
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:4;32
+msgid "Id"
+msgstr "ID"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:9
+msgid "Affiliation Type"
+msgstr "所属名"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:20
+msgid "Delete Affiliation"
+msgstr "所属削除"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:28
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:28
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:28
+msgid "Related Customers"
+msgstr "関連顧客"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:33
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:33
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:33
+msgid "Affiliation Id"
+msgstr "所属番号"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:34
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:34
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:34
+msgid "Primary Id"
+msgstr "種別番号"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:35
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:35
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:19
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:35
+msgid "Customer Name"
+msgstr "顧客名"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:36
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:36
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:24
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:36
+msgid "Tel"
+msgstr "電話場号"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:37
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:37
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:29
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:37
+msgid "Email"
+msgstr "Eメールアドレス"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:38
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:38
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:38
+msgid "Answer Id"
+msgstr "返答番号"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:39
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:39
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:39
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:39
+msgid "Created"
+msgstr "作成日"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Affiliations/view.ctp:40
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:40
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:44
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:40
+msgid "Modified"
+msgstr "更新日"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/add.ctp:4
+msgid "Add Answer"
+msgstr "返答追加"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/add.ctp:15
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/edit.ctp:17
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:21
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/add.ctp:25
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/edit.ctp:27
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/index.ctp:67
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:62
+msgid "List Answers"
+msgstr "返答リスト"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/edit.ctp:4
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:19
+msgid "Edit Answer"
+msgstr "返答編集"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/index.ctp:2
+msgid "Answers"
+msgstr "返答"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/index.ctp:42
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:22
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/add.ctp:26
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/edit.ctp:28
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/index.ctp:68
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:63
+msgid "New Answer"
+msgstr "返答追加"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:2
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:34
+msgid "Answer"
+msgstr "返答詳細"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:9
+msgid "Type"
+msgstr "返答種類"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Answers/view.ctp:20
+msgid "Delete Answer"
+msgstr "返答削除"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/add.ctp:4
+msgid "Add Customer"
+msgstr "顧客追加"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/add.ctp:23
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/edit.ctp:25
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/index.ctp:65
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:60
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/add.ctp:15
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/edit.ctp:17
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:21
+msgid "List Primaries"
+msgstr "種別リスト"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/add.ctp:24
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/edit.ctp:26
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/index.ctp:66
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:61
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/index.ctp:42
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:22
+msgid "New Primary"
+msgstr "種別追加"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/edit.ctp:4
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:54
+msgid "Edit Customer"
+msgstr "種別編集"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/index.ctp:2
+msgid "Customers"
+msgstr "顧客"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:2
+msgid "Customer"
+msgstr "顧客詳細"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:14
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:2
+msgid "Primary"
+msgstr "種別詳細"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Customers/view.ctp:55
+msgid "Delete Customer"
+msgstr "顧客削除"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/add.ctp:4
+msgid "Add Primary"
+msgstr "種別追加"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/edit.ctp:4
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:19
+msgid "Edit Primary"
+msgstr "種別編集"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/index.ctp:2
+msgid "Primaries"
+msgstr "種別リスト"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:9
+msgid "Primary Type"
+msgstr "種別種類"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Primaries/view.ctp:20
+msgid "Delete Primary"
+msgstr "種別削除"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Errors/error400.ctp:19
+#: C:/xampp/htdocs/reservation_system/app/View/Errors/error500.ctp:19
+msgid "Error"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Errors/error400.ctp:21
+msgid "The requested address %s was not found on this server."
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Errors/error500.ctp:20
+msgid "An Internal Error Has Occurred."
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Layouts/default.ctp:17
+#: C:/xampp/htdocs/reservation_system/app/View/Layouts/error.ctp:17
+msgid "CakePHP: the rapid development php framework"
+msgstr "予約状況管理システム"
+
+msgid "CakePHP: the rapid development php framework"
+msgstr "予約状況管理システム"
+
+megid "CakePHP"
+msgstr "予約管理システム"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Layouts/default.ctp:18
+msgid "CakePHP %s"
+msgstr "予約状況管理システム"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:14
+msgid "Release Notes for CakePHP %s."
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:16
+msgid "Read the changelog"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:25
+msgid "URL rewriting is not properly configured on your server."
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:34
+msgid "Your version of PHP is 5.2.8 or higher."
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:38
+msgid "Your version of PHP is too low. You need PHP 5.2.8 or higher to use CakePHP."
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:47
+msgid "Your tmp directory is writable."
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:51
+msgid "Your tmp directory is NOT writable."
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:61
+msgid "The %s is being used for core caching. To change the config edit %s"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:65
+msgid "Your cache is NOT working. Please check the settings in %s"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:75
+msgid "Your database configuration file is present."
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:80
+msgid "Your database configuration file is NOT present."
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:82
+msgid "Rename %s to %s"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:107
+msgid "CakePHP is able to connect to the database."
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:111
+msgid "CakePHP is NOT able to connect to the database."
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:124
+msgid "PCRE has not been compiled with Unicode support."
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:126
+msgid "Recompile PCRE with Unicode support by adding <code>--enable-unicode-properties</code> when configuring"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:135
+msgid "DebugKit plugin is present"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:139
+msgid "DebugKit is not installed. It will help you inspect and debug different aspects of your application."
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:141
+msgid "You can install it from %s"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:147
+msgid "Editing this Page"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:150
+msgid "To change the content of this page, edit: %s.<br />\nTo change its layout, edit: %s.<br />\nYou can also add some CSS styles for your pages at: %s."
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:157
+msgid "Getting Started"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:161
+msgid "New"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:161
+msgid "CakePHP 2.0 Docs"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:170
+msgid "The 15 min Blog Tutorial"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:177
+msgid "Official Plugins"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:182
+msgid "provides a debugging toolbar and enhanced debugging tools for CakePHP applications."
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:186
+msgid "contains various localized validation classes and translations for specific countries"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:191
+msgid "More about CakePHP"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:193
+msgid "CakePHP is a rapid development framework for PHP which uses commonly known design patterns like Active Record, Association Data Mapping, Front Controller and MVC."
+msgstr "予約状況管理システム"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:196
+msgid "Our primary goal is to provide a structured framework that enables PHP users at all levels to rapidly develop robust web applications, without any loss to flexibility."
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:201
+msgid "The Rapid Development Framework"
+msgstr "予約状況管理システム"
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:202
+msgid "CakePHP Documentation"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:203
+msgid "Your Rapid Development Cookbook"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:204
+msgid "CakePHP API"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:205
+msgid "Quick API Reference"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:206
+msgid "The Bakery"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:207
+msgid "Everything CakePHP"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:208
+msgid "CakePHP Plugins"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:209
+msgid "A comprehensive list of all CakePHP plugins created by the community"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:210
+msgid "CakePHP Community Center"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:211
+msgid "Everything related to the CakePHP community in one place"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:212
+msgid "CakePHP Google Group"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:213
+msgid "Community mailing list"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:215
+msgid "Live chat about CakePHP"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:216
+msgid "CakePHP Code"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:217
+msgid "Find the CakePHP code on GitHub and contribute to the framework"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:218;219
+msgid "CakePHP Issues"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:220;221
+msgid "CakePHP Roadmaps"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:222
+msgid "Training"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:223
+msgid "Join a live session and get skilled with the framework"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:224
+msgid "CakeFest"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:225
+msgid "Don't miss our annual CakePHP conference"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:226
+msgid "Cake Software Foundation"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/View/Pages/home.ctp:227
+msgid "Promoting development related to CakePHP"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation_system/app/webroot/test.php:103
+msgid "Debug setting does not allow access to this url."
+msgstr ""
+
+
+msgid "No Data"
+msgstr "データが登録されていません。"
+
+msgid "Join Total"
+msgstr "参加"
+
+msgid "UnJoin Total"
+msgstr "不参加"
+
+msgid "Un Total"
+msgstr "未定"
+
+#: C:/xampp/htdocs/reservation/reservation_system/app/Controller/TicketsController.php:38;70;95
+msgid "Invalid ticket"
+msgstr ""
+
+#: C:/xampp/htdocs/reservation/reservation_system/app/Controller/TicketsController.php:53;74
+msgid "The ticket has been saved."
+msgstr "チケットデータがありません。"
+
+#: C:/xampp/htdocs/reservation/reservation_system/app/Controller/TicketsController.php:56;77
+msgid "The ticket could not be saved. Please, try again."
+msgstr "保存できませんでした。もう一度やり直してください。"
+
+#: C:/xampp/htdocs/reservation/reservation_system/app/Controller/TicketsController.php:99
+msgid "The ticket has been deleted."
+msgstr "削除されました。"
+
+#: C:/xampp/htdocs/reservation/reservation_system/app/Controller/TicketsController.php:101
+msgid "The ticket could not be deleted. Please, try again."
+msgstr "削除できませんでした。もう一度やり直してください。"
+
+msgid "List Tickets"
+msgstr "チケットリスト"
+
+msgid "New Ticket"
+msgstr "チケット作成"
+
+msgid "Ticket"
+msgstr "チケット詳細"
+
+msgid "Add Ticket"
+msgstr "チケット作成"
+
+msgid "Edit Ticket"
+msgstr "チケット編集"
+
+msgid "Tickets"
+msgstr "チケットリスト"
+
+msgid "Delete Ticket"
+msgstr "チケット削除"
+
+msgid "Ticket Id"
+msgstr "チケットID"
+
+msgid "Name"
+msgstr "名前"
+
+msgid "Stock"
+msgstr "在庫"
+
+msgid "Issue"
+msgstr "発行数"
+
+msgid "serch_tickets"
+msgstr "チケット別集計"
+
+msgid "Total"
+msgstr "合計"
+
+msgid "customer_count"
+msgstr "参加者数"
+
+msgid "Related Tickets"
+msgstr "関連チケット"
+
+msgid "Sales Infos"
+msgstr "売上情報リスト"
+
+msgid "Sales Info"
+msgstr "売上情報"
+
+msgid "Edit Sales Info"
+msgstr "売上情報編集"
+
+msgid "Delete Sales Info"
+msgstr "売上情報削除"
+
+msgid "Ticket Name"
+msgstr "チケット名"
+
+msgid "SalesInfo Id"
+msgstr "売上情報ID"
+
+msgid "Answer Name"
+msgstr "参加状況"
+
+msgid "Sales Created"
+msgstr "売上情報作成日"
+
+msgid "SalesModified"
+msgstr "売上情報更新日"
+
+msgid "Add Sales Info"
+msgstr "売上情報追加"
+
+msgid "affiliation_name"
+msgstr "売上情報"
+
+msgid "List Sales Infos"
+msgstr "売上情報リスト"
+
+msgid "New Sales Info"
+msgstr "売上情報追加"
+
+msgid "affiliation_name"
+msgstr "所属名"
+
+msgid "Affiliation Name"
+msgstr "所属名"
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
