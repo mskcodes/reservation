@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
 <file name="Affiliation.php" server="saihe.sakura.ne.jp/www/" local="130864064410000000" remote="130864065000000000" />
+<file name="Answer.php" server="saihe.sakura.ne.jp/www/" local="130861530500969029" remote="130888295400000000" />
+<file name="AppModel.php" server="saihe.sakura.ne.jp/www/" local="130861530501009002" remote="130888295400000000" />
+<file name="Customer.php" server="saihe.sakura.ne.jp/www/" local="130861530501069239" remote="130888295400000000" />
+<file name="Primary.php" server="saihe.sakura.ne.jp/www/" local="130861530501129344" remote="130888295400000000" />
+<file name="SalesInfo.php" server="saihe.sakura.ne.jp/www/" local="130861530501179017" remote="130888295400000000" />
+<file name="Ticket.php" server="saihe.sakura.ne.jp/www/" local="130861530501219021" remote="130888295400000000" />
 </dwsync>
